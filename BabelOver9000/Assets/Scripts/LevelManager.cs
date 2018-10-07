@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
 
+	[Header("PATTERNS")]
+	public GameObject[] patternsArray;
+	[SerializeField] Transform patternsSpawn;
+	float spawnPosY = 0;
+	[SerializeField] int[] numberLevelsArray;
+
+	[Header("BUBBLES")]
 	public int BUBBLES_NUMBER_MAX = 5;
 	int currentBubblesActivate = 0;
 
 	public Bubble[] bubblesArray;
-	public GameObject[] patternsArray;
-	int patternIndex = 0;
-	int NUMBER_PATTERNS;
 
+	//int patternIndex = 0;
+	int NUMBER_LEVELS;
+
+	[Header("FLOORS")]
 	public GameObject floor;
 	[SerializeField] int floorPosY = 0;
-	[SerializeField] int FLOOR_OFFSET_Y = 2;
+	public int FLOOR_OFFSET_Y = 3;
+	[SerializeField] Sprite[] spriteFloorsArray;
+	//int spriteIndex = 0;
 
-	[SerializeField] Transform patternsSpawn;
-	float spawnPosY = 0;
-
-	[SerializeField] int[] numberLevelsArray;
+	int level = 0;
 
 	//		float newY = GetComponent<Transform>().position.y + 2;
 	//	GetComponent<Transform>().position = new Vector3(0, newY, 0);
@@ -42,7 +49,7 @@ public class LevelManager : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		FirstSpawnPattern();
-		NUMBER_PATTERNS = patternsArray.Length;
+		NUMBER_LEVELS = patternsArray.Length;
 	}
 	
 	public void IncrementBubbleActivateNumber(){
@@ -56,6 +63,13 @@ public class LevelManager : MonoBehaviour {
 
 	void NextLevel(){
 
+		level++;
+
+		if(level >= NUMBER_LEVELS) {
+			print("END GAME");
+			return;
+		}
+
 		MoveCamera();
 	}
 
@@ -64,7 +78,7 @@ public class LevelManager : MonoBehaviour {
 		Vector3 camPos = Camera.main.gameObject.transform.position;
 
 		float newX = camPos.x;
-		float newY = camPos.y + 2;
+		float newY = camPos.y + FLOOR_OFFSET_Y;
 		float newZ = camPos.z;
 
 		Vector3 newPos = new Vector3(newX, newY, newZ);
@@ -84,6 +98,7 @@ public class LevelManager : MonoBehaviour {
              yield return new WaitForFixedUpdate();
          }
          objectToMove.position = b;
+
          MoveBubbles();
          AddFloor();
          SpawnPattern();
@@ -92,7 +107,9 @@ public class LevelManager : MonoBehaviour {
 	void AddFloor()
 	{
 		floorPosY += FLOOR_OFFSET_Y;
-		Instantiate(floor, new Vector3(0, floorPosY, 0), Quaternion.identity);
+
+		GameObject newFloor = Instantiate(floor, new Vector3(0, floorPosY, 0), Quaternion.identity);
+		newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[level];
 	}
 
 	void MoveBubbles()
@@ -110,24 +127,16 @@ public class LevelManager : MonoBehaviour {
 		float posX = patternsSpawn.position.x;
 		float posZ = patternsSpawn.position.z;
 
-		print(patternsArray[patternIndex]);
-		Instantiate(patternsArray[patternIndex].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
+		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
 	}
 
 	void SpawnPattern(){
 		float posX = patternsSpawn.position.x;
 		float posZ = patternsSpawn.position.z;
 
-		patternIndex++;
-
-		if(patternIndex >= NUMBER_PATTERNS) {
-			print("END GAME");
-			return;
-		}
-
 		spawnPosY += FLOOR_OFFSET_Y;
-		print(patternsArray[patternIndex]);
-		Instantiate(patternsArray[patternIndex].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
+
+		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
 	}
 
 

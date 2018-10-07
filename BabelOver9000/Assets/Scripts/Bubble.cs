@@ -69,7 +69,7 @@ public class Bubble : MonoBehaviour {
 		sr.sprite = bubbleUnactivate;
 
 		float newX = GetComponent<Transform>().position.x;
-		float newY = GetComponent<Transform>().position.y + 2;
+		float newY = GetComponent<Transform>().position.y + LevelManager.instance.FLOOR_OFFSET_Y;
 		float newZ = GetComponent<Transform>().position.z;
 
 		GetComponent<Transform>().position = new Vector3(newX, newY, newZ);
