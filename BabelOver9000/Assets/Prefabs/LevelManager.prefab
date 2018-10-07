@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1057887878376172}
+  m_IsPrefabAsset: 1
+--- !u!1 &1057887878376172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4366126485166164}
+  - component: {fileID: 114645374537218288}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4366126485166164
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1057887878376172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114645374537218288
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1057887878376172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 422b9ee503f06ae409efe2988bdaf555, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patternsArray:
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  patternsSpawn: {fileID: 0}
+  NUMBER_LEVELS: 15
+  LEVELS_MAYA: 3
+  LEVELS_RENAISSANCE: 7
+  LEVELS_KOREA: 11
+  BUBBLES_NUMBER_MAX: 5
+  bubblesArray:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  floor: {fileID: 1484011381900944, guid: da1b7c710bb32804cb31b6634a4c4c4b, type: 2}
+  floorPosY: 0
+  FLOOR_OFFSET_Y: 3
+  spriteFloorsArray:
+  - {fileID: 21300000, guid: 61c82ea1d5002c84c9c5e1c0a1a59e7a, type: 3}
+  - {fileID: 21300000, guid: 48b15a88ed9e9244cb1e8feee9d6b8b9, type: 3}
+  - {fileID: 21300000, guid: a3092a08e79c34d4998e540b0f6d3069, type: 3}
+  - {fileID: 21300000, guid: 1b63994dfbc296441b15604b7d74aa85, type: 3}
+  - {fileID: 21300000, guid: 39568116dbaca294f8decf8df4cb2dcc, type: 3}
+  - {fileID: 21300000, guid: 4a9d92792e19e014b948fcabad3225d5, type: 3}
+  - {fileID: 21300000, guid: efabc859c144dee47b4ac769d2a9132d, type: 3}
+  - {fileID: 21300000, guid: f567f34177c5fa049a0eb8679ad0c68b, type: 3}
+  - {fileID: 21300000, guid: eb590dc60f0929844af6d40a98c7d293, type: 3}
+  - {fileID: 21300000, guid: 7a220b66367e9e44f901a4a9f6833b08, type: 3}
+  - {fileID: 21300000, guid: a0cb3b34c4df0124894bbdcee21bdc82, type: 3}
+  - {fileID: 21300000, guid: 82f1e4adfd8b6024289d791ed2a03d12, type: 3}
+  - {fileID: 21300000, guid: 38c2a53f19e0b254d852510234f59c4d, type: 3}
+  - {fileID: 21300000, guid: 189bbd65ab2290c42846d7806e6f99bb, type: 3}
+  - {fileID: 21300000, guid: d3c3603c816e435409099b73785e0b20, type: 3}
+  shouldReplay: 0
