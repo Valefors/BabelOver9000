@@ -67,12 +67,18 @@ public class Bubble : MonoBehaviour {
 	public void SetModeNormal(){
 		activeSpecial = false;
 		sr.sprite = bubbleUnactivate;
+		gameObject.SetActive(true);
 
 		float newX = GetComponent<Transform>().position.x;
-		float newY = GetComponent<Transform>().position.y + LevelManager.instance.FLOOR_OFFSET_Y;
+		float newY = GetComponent<Transform>().position.y;
+		if(!LevelManager.instance.shouldReplay) newY = GetComponent<Transform>().position.y + LevelManager.instance.FLOOR_OFFSET_Y;
 		float newZ = GetComponent<Transform>().position.z;
 
 		GetComponent<Transform>().position = new Vector3(newX, newY, newZ);
+	}
+
+	public void SetModeHide(){
+		gameObject.SetActive(false);
 	}
 
 	void OnTriggerEnter(Collider col)
@@ -83,13 +89,20 @@ public class Bubble : MonoBehaviour {
 		{
 			note = col.gameObject;
 
-			if(note.GetComponent<Note>().isSpecial) activeSpecial = true; //DESACTIVER QUAND RECOMMENCE TOUR
+			if(note.GetComponent<Note>().isSpecial) activeSpecial = true;
+			if(note.GetComponent<Note>().isLastNote) LevelManager.instance.CheckReplay();
 		}
 	}
 
 	void OnTriggerExit(Collider col)
 	{
 		active = false;
+
+		if(col.gameObject.tag == "Note")
+		{
+
+			if(col.GetComponent<Note>().isSpecial) LevelManager.instance.shouldReplay = true; 
+		}
 	}
 
 	IEnumerator Pressed(){

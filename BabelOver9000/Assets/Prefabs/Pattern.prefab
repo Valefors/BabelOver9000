@@ -442,6 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isSpecial: 1
+  isLastNote: 1
 --- !u!114 &114561833679230160
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,6 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isSpecial: 1
+  isLastNote: 0
 --- !u!114 &114764022961808642
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -468,6 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isSpecial: 1
+  isLastNote: 0
 --- !u!114 &114831405344255732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -481,6 +484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isSpecial: 1
+  isLastNote: 0
 --- !u!114 &114954946605629312
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -494,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   isSpecial: 1
+  isLastNote: 0
 --- !u!135 &135160986188620052
 SphereCollider:
   m_ObjectHideFlags: 1
@@ -587,7 +592,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -633,7 +638,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -679,7 +684,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 0.8867924, g: 0.8407796, b: 0.8407796, a: 1}
@@ -725,7 +730,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -771,7 +776,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 0.8867924, g: 0.8407796, b: 0.8407796, a: 1}
@@ -817,7 +822,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -863,7 +868,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -909,7 +914,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 0.8867924, g: 0.8407796, b: 0.8407796, a: 1}
@@ -955,7 +960,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 0.8867924, g: 0.8407796, b: 0.8407796, a: 1}
@@ -1001,7 +1006,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1652511459
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 6f016f6fbcabfaa47baeb69fcc60c598, type: 3}
   m_Color: {r: 0.8867924, g: 0.8407796, b: 0.8407796, a: 1}
