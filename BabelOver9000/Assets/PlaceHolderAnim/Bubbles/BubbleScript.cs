@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class BubbleScript: MonoBehaviour {
 
-	public Animation anim;
+	public Animation animWin;
 	Animator totor;
 	public Sprite win;
 	public Sprite defaultSprite;
@@ -15,7 +15,7 @@ public class BubbleScript: MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		anim = GetComponent<Animation> ();
+		animWin = GetComponent<Animation> ();
 		totor = GetComponent<Animator> ();
 	}
 
@@ -23,10 +23,14 @@ public class BubbleScript: MonoBehaviour {
 	void Update () 
 	{
 		if (Input.GetKeyDown (KeyCode.P))//condition de note réussie (à appeler du script, probablement)
-			anim.Play ();
-		if (!anim.IsPlaying ("BubbleAnimWin"))
+			totor.SetBool("input",true);
+		/*if (!animWin.IsPlaying ("BubbleAnimWin"))
 			print ("it's over");
 		else
-			print ("playing");
+			print ("playing");*/
+	}
+
+	public void setInputfalse(){
+		totor.SetBool ("input", false);
 	}
 }

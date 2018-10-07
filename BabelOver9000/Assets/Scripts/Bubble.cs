@@ -20,6 +20,11 @@ public class Bubble : MonoBehaviour {
 	Sprite bubbleActivate;
 	Sprite bubbleUnactivate;
 
+	/*public Animation animWin;
+	Animator totor;
+	public Sprite win;
+	public Sprite defaultSprite;*/
+
 	void Awake(){
 		sr = GetComponent<SpriteRenderer>();
 		bubbleActivate = Resources.Load<Sprite>("Sprites/Bubble_Activate");
@@ -29,11 +34,18 @@ public class Bubble : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		old = sr.color;
+		/*animWin = GetComponent<Animation> ();
+		totor = GetComponent<Animator> ();*/
+
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+
+		/*if (Input.GetKeyDown (KeyCode.P))//condition de note réussie (à appeler du script, probablement)
+			animWin.Play ();*/
+
 		if(createMode)
 		{
 			if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2))
