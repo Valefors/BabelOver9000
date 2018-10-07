@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WwiseSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
+  <CreatedPicker>true</CreatedPicker>
+  <CreateWwiseGlobal>false</CreateWwiseGlobal>
+  <CreateWwiseListener>false</CreateWwiseListener>
+  <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
+  <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
+  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+  <WwiseInstallationPathMac />
+  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2018.1.2.6762</WwiseInstallationPathWindows>
+  <WwiseProjectPath>../../../BabelOver9000_Sons/BabelOver9000_Sounds/Babel_9000/Babel_9000.wproj</WwiseProjectPath>
+</WwiseSettings>

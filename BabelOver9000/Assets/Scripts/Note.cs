@@ -6,6 +6,7 @@ public class Note : MonoBehaviour {
 
 	Rigidbody rb;
 	public int speed = 0;
+	public bool isSpecial = false;
 
 	void Awake(){
 		rb = GetComponent<Rigidbody>();
