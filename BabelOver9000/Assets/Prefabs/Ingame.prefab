@@ -288,7 +288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4085465302213038
 Transform:
   m_ObjectHideFlags: 1
@@ -462,7 +462,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1043213454622236}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -257.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4214206060540416}
@@ -551,6 +551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 102
   key2: 333
+  hitSoundName: Play_Hit4
   activeSpecial: 0
   createMode: 0
   n: {fileID: 1734529401656392, guid: 5530f22344e84b9488d7044d7a60653c, type: 2}
@@ -567,6 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 113
   key2: 330
+  hitSoundName: Play_Hit1
   activeSpecial: 0
   createMode: 0
   n: {fileID: 1734529401656392, guid: 5530f22344e84b9488d7044d7a60653c, type: 2}
@@ -583,6 +585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 103
   key2: 334
+  hitSoundName: Play_Hit5
   activeSpecial: 0
   createMode: 0
   n: {fileID: 1734529401656392, guid: 5530f22344e84b9488d7044d7a60653c, type: 2}
@@ -599,6 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 115
   key2: 331
+  hitSoundName: Play_Hit2
   activeSpecial: 0
   createMode: 0
   n: {fileID: 1734529401656392, guid: 5530f22344e84b9488d7044d7a60653c, type: 2}
@@ -615,6 +619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 100
   key2: 332
+  hitSoundName: Play_Hit3
   activeSpecial: 0
   createMode: 0
   n: {fileID: 1734529401656392, guid: 5530f22344e84b9488d7044d7a60653c, type: 2}

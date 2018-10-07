@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8459746C-F15B-4239-8505-947CF26C9093}" SchemaVersion="89">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{8459746C-F15B-4239-8505-947CF26C9093}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main_SoundBank" ID="{9C06CB65-A84F-4E91-B61F-FAEB365F956F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Music" ID="{423F74A9-6FFB-4063-94C2-6CEB422E5E75}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Korea_Stage4" ID="{95E3B59C-CAC1-4086-AE87-FB9163C95506}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Renaissance_Stage4" ID="{580D4F7B-C47F-4090-960B-954063619C3E}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Bubble1" ID="{F30E82B0-1C82-4093-8BF2-B7CACB162921}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Meso_Stage1" ID="{00955237-79C7-4112-9AD1-0A09A88AF7CA}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Hit3" ID="{F3335DEC-A844-423B-BFA4-1EEC90E19973}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Hit2" ID="{4E78F52F-64BE-4274-BBDB-3F73178BC001}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Menu_Amb" ID="{DF687D6D-9C6F-42D3-94D2-B0F32A07F201}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Meso_Stage2" ID="{7A630E2E-F4BC-42E3-A59F-265643FB9094}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Maya_Stage2" ID="{347A052B-18EB-430E-B8DB-08760745F8B2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Bubble3" ID="{712B26A0-6773-4359-93EB-B8EF28821829}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Select" ID="{0E937DE0-8F91-43C6-B815-6D2ADE058935}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Bubble5" ID="{DFBBD077-21F5-4460-A841-F1E88E0609F7}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Korea_Stage3" ID="{5CD78A70-8CBD-4497-8FEC-A3D47A26B120}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Music" ID="{088583DA-18FF-450E-A4A8-B5AA2FC5EBDC}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Maya_Stage3" ID="{3D9F3982-FA54-456A-841F-29DE89063E09}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="End_Construction" ID="{1D6BA395-90A3-46CC-AAFB-E25B0659C149}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Click" ID="{EE434517-92EA-4707-973F-113D9193D373}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Renaissance_Stage2" ID="{909B84B2-8349-4714-A7AD-D46BBAACDF81}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Maya_Stage4" ID="{6B5B4220-D3EE-471B-8F45-D97E67051E6F}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Maya_Stage1" ID="{C7207114-4570-47A7-9EAB-7C75CE2F5BA4}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Renaissance_Stage3" ID="{D56431FA-4D9A-4823-874E-A44246E6D8A1}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Construction" ID="{C28EC470-971A-4834-B0BE-9E06D733CC8A}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Input_Miss" ID="{2458BBA9-7399-48EE-854B-B41DF38B9F90}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Hit1" ID="{71E6AFCB-8ACA-494A-93C3-0ED03D63143C}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Korea_Stage2" ID="{4A552F8E-FDBE-4A57-B403-59FB26789B4F}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Meso_Stage3" ID="{5D35D612-3A9B-4B0E-BEC1-56A16BFD2DAB}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Bubble2" ID="{2336EF19-1E88-4BCB-AC3C-01C7241116C2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Hit5" ID="{B6E651B1-309F-4CDA-8126-EBBEAF451B79}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Hit4" ID="{6E376173-649B-4DC3-850F-55EB0381B8C3}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Bubble4" ID="{8F7C415B-A9C9-4E4C-9780-4D72B87479C2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Destruction" ID="{74CB4570-5E8F-4E8A-A50F-AA68A6D4C829}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Korea_Stage1" ID="{BA9D48D6-4115-4F5F-8984-DF44D705F98D}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Menu_Amb" ID="{942AB9BC-9AA6-4F65-85B0-0B734131EB32}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Renaissance_Stage1" ID="{4F01308A-FF44-4FAC-888D-744EE3219080}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

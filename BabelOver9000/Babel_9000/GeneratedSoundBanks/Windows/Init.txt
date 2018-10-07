@@ -1,0 +1,33 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1063701865	Stage			\Default Work Unit\Stage	
+
+State	ID	Name	State Group			Notes
+	0	None	Stage			
+	1387657370	Renaissance_Stage4	Stage			
+	1387657372	Renaissance_Stage2	Stage			
+	1387657373	Renaissance_Stage3	Stage			
+	1387657375	Renaissance_Stage1	Stage			
+	1961685834	Maya_Stage4	Stage			
+	1961685836	Maya_Stage2	Stage			
+	1961685837	Maya_Stage3	Stage			
+	1961685839	Maya_Stage1	Stage			
+	2231601906	Korea_Stage4	Stage			
+	2231601908	Korea_Stage2	Stage			
+	2231601909	Korea_Stage3	Stage			
+	2231601911	Korea_Stage1	Stage			
+	3202548000	Mesopotamian_Stage1	Stage			
+	3202548002	Mesopotamian_Stage3	Stage			
+	3202548003	Mesopotamian_Stage2	Stage			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	
+	985987111	Motion Factory Bus			\Default Work Unit\Motion Factory Bus	
+	1044239985	Input Miss			\Default Work Unit\Master Audio Bus\SFX\Input Miss	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3991942870	Music			\Default Work Unit\Master Audio Bus\Music	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+	4230635974	Default_Motion_Device	Wwise Motion			
+

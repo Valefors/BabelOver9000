@@ -51,12 +51,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 422b9ee503f06ae409efe2988bdaf555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statesArray:
+  - Play_Meso_Stage2
+  - Play_Meso_Stage2
+  - Play_Meso_Stage3
+  - Play_Maya_Stage1
+  - Play_Maya_Stage2
+  - Play_Maya_Stage3
+  - Play_Maya_Stage4
+  - Play_Renaissance_Stage1
+  - Play_Renaissance_Stage2
+  - Play_Renaissance_Stage3
+  - Play_Renaissance_Stage4
+  - Play_Korea_Stage1
+  - Play_Korea_Stage2
+  - Play_Korea_Stage3
+  - Play_Korea_Stage4
   patternsArray:
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1535683956189568, guid: be665e1e3a6ff3c4d897db74e51afbf6, type: 2}
+  - {fileID: 1535683956189568, guid: be665e1e3a6ff3c4d897db74e51afbf6, type: 2}
+  - {fileID: 1398848968901742, guid: 5a8d8c714eda08e4ab6bccfaabc85b3a, type: 2}
+  - {fileID: 1029118218149246, guid: 64b18078ae71af841bb8a12e798d8f22, type: 2}
+  - {fileID: 1166190510739696, guid: 8a06a19552cb6e94db67a3e533c9179a, type: 2}
   - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
   - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
   - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
@@ -68,6 +84,7 @@ MonoBehaviour:
   - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
   - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
   patternsSpawn: {fileID: 0}
+  spawnPosY: 233
   NUMBER_LEVELS: 15
   LEVELS_MAYA: 3
   LEVELS_RENAISSANCE: 7
@@ -79,6 +96,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  cam: {fileID: 0}
   floor: {fileID: 1484011381900944, guid: da1b7c710bb32804cb31b6634a4c4c4b, type: 2}
   floorPosY: 0
   FLOOR_OFFSET_Y: 3

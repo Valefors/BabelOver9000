@@ -29,6 +29,7 @@ public class StartOptions : MonoBehaviour {
 	{
 		//Get a reference to ShowPanels attached to UI object
 		showPanels = GetComponent<ShowPanels> ();
+		Debug.Log (showPanels);
 
 		//Get a reference to PlayMusic attached to UI object
 		playMusic = GetComponent<PlayMusic> ();
@@ -67,6 +68,7 @@ public class StartOptions : MonoBehaviour {
     void OnEnable()
     {
         SceneManager.sceneLoaded += SceneWasLoaded;
+        //AkSoundEngine.PostEvent("Play_Menu_Amb", gameObject);
     }
 
     void OnDisable()
@@ -119,7 +121,7 @@ public class StartOptions : MonoBehaviour {
 		animMenuAlpha.SetTrigger ("fade");
 		Invoke("HideDelayed", fadeAlphaAnimationClip.length);
 		//SceneManager.LoadScene("RythmScene");
-		Debug.Log ("Game started in same scene! Put your game starting stuff here.");
+		
 		showPanels.StartGame();
 	}
 

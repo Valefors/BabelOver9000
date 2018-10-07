@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{17E46C4A-FB94-4842-98EC-8E5C2FEFF2EC}" SchemaVersion="89">
+	<MixingSessions>
+		<WorkUnit Name="Default Work Unit" ID="{17E46C4A-FB94-4842-98EC-8E5C2FEFF2EC}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="Mixing Session" ID="{E77632BD-86A9-4A66-A90D-7B451B8DD31A}">
+					<ObjectList>
+						<ObjectRef Name="SFX_Hit" ID="{E91A6D9D-1447-4727-B84D-EF461090BC71}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+						<ObjectRef Name="SFX_Bubble" ID="{79426649-4960-4116-915B-0B213DC8D180}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+						<ObjectRef Name="Music" ID="{79610F18-A8D2-4482-8ABD-A7F5DB334568}" WorkUnitID="{85251494-71FA-4758-8FBF-901FD46BB671}"/>
+						<ObjectRef Name="SFX_UI" ID="{9F42860B-5097-4FDB-83EE-F2373F978F34}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+						<ObjectRef Name="SFX_Construction" ID="{655EC279-26A5-4FE3-AEA2-FE49567DF443}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+						<ObjectRef Name="SFX_Menu_Amb" ID="{FD79469D-9FEE-4CDA-8166-84EBCA3034DA}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+						<ObjectRef Name="SFX_Destruction" ID="{DE4C4771-166A-4254-A852-D604E2D3D7FE}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

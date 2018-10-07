@@ -15,36 +15,531 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f10dd3e7ef3f8479ce1b84953d3dcbd
-    m_lastTime: -8586627686142251900
+    m_lastTime: -8586627737154775808
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: ab9c81a650cc504399d33235559b07d4
-    m_lastTime: -8586627686142331882
+    m_lastTime: -8586626806574775808
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6c7459845bf139428505947cf26c9093
-    m_lastTime: -8586627686142291896
-    List: []
+    m_lastTime: -8586626840254775808
+    List:
+    - name: Main_SoundBank
+      guid: 65cb069c4fa8914eb61ffaeb365f956f
+      id: 2228651116
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main_SoundBank
+        ObjectType: 7
+      Path: Default Work Unit\Main_SoundBank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d03ae198ad5a0248b8eaffa31a164703
-    m_lastTime: -8586627686142371898
-    List: []
+    m_lastTime: -8586626616558549291
+    List:
+    - name: End_Construction
+      guid: 95a36b1da390cc46aafbe25b0659c149
+      id: 3596890376
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Construction
+        ObjectType: 4
+      - ElementName: End_Construction
+        ObjectType: 3
+      Path: Default Work Unit\Construction\End_Construction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Bubble1
+      guid: b0820ef3821c93408bf2b7cacb162921
+      id: 3381697361
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Bubble1
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Bubble1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Bubble2
+      guid: 19ef3623881ecb4bac3c01c7241116c2
+      id: 3381697362
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Bubble2
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Bubble2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Bubble3
+      guid: a0262b717367594393ebb8ef28821829
+      id: 3381697363
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Bubble3
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Bubble3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Bubble4
+      guid: 5b417c8fc9a94c4e97804d72b87479c2
+      id: 3381697364
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Bubble4
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Bubble4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Bubble5
+      guid: 77d0bbdff5216044a841f1e88e0609f7
+      id: 3381697365
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Bubble5
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Bubble5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Click
+      guid: 174543eeea920747973f113d9193d373
+      id: 311910498
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Click
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_Click
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Construction
+      guid: 70c48ec21a973448b0be9e06d733cc8a
+      id: 1598463209
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Construction
+        ObjectType: 4
+      - ElementName: Play_Construction
+        ObjectType: 3
+      Path: Default Work Unit\Construction\Play_Construction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Destruction
+      guid: 7045cb748f5e8a4ea50faa68a6d4c829
+      id: 1680374718
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Construction
+        ObjectType: 4
+      - ElementName: Play_Destruction
+        ObjectType: 3
+      Path: Default Work Unit\Construction\Play_Destruction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Hit1
+      guid: cbafe671ca8a4a4993c30ed03d63143c
+      id: 2855285462
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Hit1
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Hit1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Hit2
+      guid: 2ff5784ebe647442bbdb3f73178bc001
+      id: 2855285461
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Hit2
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Hit2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Hit3
+      guid: ec5d33f344a83b42bfa41eec90e19973
+      id: 2855285460
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Hit3
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Hit3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Hit4
+      guid: 7361376e9b64c34d850f55eb0381b8c3
+      id: 2855285459
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Hit4
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Hit4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Hit5
+      guid: b151e6b69f30da4c8126ebbeaf451b79
+      id: 2855285458
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Hit5
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Hit5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Input_Miss
+      guid: a9bb58249973ee48854bb41df38b9f90
+      id: 2878934361
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Feedbacks
+        ObjectType: 4
+      - ElementName: Play_Input_Miss
+        ObjectType: 3
+      Path: Default Work Unit\Feedbacks\Play_Input_Miss
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Korea_Stage1
+      guid: d6489dba15415f4f8984df44d705f98d
+      id: 224658260
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Korea_Stage1
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Korea_Stage1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Korea_Stage2
+      guid: 8e2f554abefd574ab40359fb26789b4f
+      id: 224658263
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Korea_Stage2
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Korea_Stage2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Korea_Stage3
+      guid: 708ad75cbd8c97448feca3d47a26b120
+      id: 224658262
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Korea_Stage3
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Korea_Stage3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Korea_Stage4
+      guid: 9cb5e395c1ca8640ae87fb9163c95506
+      id: 224658257
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Korea_Stage4
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Korea_Stage4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Maya_Stage1
+      guid: 147120c77045a7479eab7c75ce2f5ba4
+      id: 540733246
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Maya_Stage1
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Maya_Stage1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Maya_Stage2
+      guid: 2b057a34eb180e43b8db08760745f8b2
+      id: 540733245
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Maya_Stage2
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Maya_Stage2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Maya_Stage3
+      guid: 82399f3d54fa6a45841f29de89063e09
+      id: 540733244
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Maya_Stage3
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Maya_Stage3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Maya_Stage4
+      guid: 20425b6beed31b478f45d97e67051e6f
+      id: 540733243
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Maya_Stage4
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Maya_Stage4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Menu_Amb
+      guid: bcb92a94a69a654f85b00b734131eb32
+      id: 2515027838
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Menu_Amb
+        ObjectType: 3
+      Path: Default Work Unit\Play_Menu_Amb
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Meso_Stage1
+      guid: 37529500c77912419ad10a09a88af7ca
+      id: 176614854
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Meso_Stage1
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Meso_Stage1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Meso_Stage2
+      guid: 2e0e637abcf4e342a59f265643fb9094
+      id: 176614853
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Meso_Stage2
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Meso_Stage2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Meso_Stage3
+      guid: 12d6355d9b3a0e4bbec156a16bfd2dab
+      id: 176614852
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Meso_Stage3
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Meso_Stage3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Music
+      guid: a9743f42fb6f634094c26ceb422e5e75
+      id: 2932040671
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Music
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Renaissance_Stage1
+      guid: 8a30014f44ffac4f888d744ee3219080
+      id: 1937964708
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Renaissance_Stage1
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Renaissance_Stage1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Renaissance_Stage2
+      guid: b2849b9049831447a7add46bbaacdf81
+      id: 1937964711
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Renaissance_Stage2
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Renaissance_Stage2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Renaissance_Stage3
+      guid: fa3164d59a4d2348874ea44246e6d8a1
+      id: 1937964710
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Renaissance_Stage3
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Renaissance_Stage3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Renaissance_Stage4
+      guid: 7b4f0d587fc49040960b954063619c3e
+      id: 1937964705
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Renaissance_Stage4
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Renaissance_Stage4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Select
+      guid: e07d930e918fc643b8156d2ade058935
+      id: 1042987450
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI
+        ObjectType: 4
+      - ElementName: Play_Select
+        ObjectType: 3
+      Path: Default Work Unit\UI\Play_Select
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Menu_Amb
+      guid: 6d7d68df6f9cd34294d2b0f32a07f201
+      id: 3073912520
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Menu_Amb
+        ObjectType: 3
+      Path: Default Work Unit\Stop_Menu_Amb
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Stop_Music
+      guid: da838508ff180e45a4a8b5aa2fc5ebdc
+      id: 2837384057
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Stop_Music
+        ObjectType: 3
+      Path: Default Work Unit\Music\Stop_Music
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 61d0720be78e0a4f8c0fb51ee944ca4a
-    m_lastTime: -8586627686142361900
+    m_lastTime: -8586627737154775808
     List: []
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     ParentPhysicalPath: 
     guid: 225213d7dbd1d042adc0930743567776
-    m_lastTime: -8586627686142351898
+    m_lastTime: -8586627741654775808
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -68,20 +563,129 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0a59d1c2764fdc48855ed5afa01900fa
-    m_lastTime: -8586627686142271903
-    List: []
+    m_lastTime: -8586627031314775808
+    List:
+    - name: Stage
+      guid: f0ee5b73f2e84d48a2a4063c748d1c85
+      id: 1063701865
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stage
+        ObjectType: 9
+      Path: Default Work Unit\Stage
+      values:
+      - name: Korea_Stage1
+        guid: eba3bba2b03e0240a141685aa617a764
+        id: 2231601911
+        PathAndIcons:
+        - ElementName: Korea_Stage1
+          ObjectType: 8
+      - name: Korea_Stage2
+        guid: 49a85507373bef428c6caf48fc7bfc06
+        id: 2231601908
+        PathAndIcons:
+        - ElementName: Korea_Stage2
+          ObjectType: 8
+      - name: Korea_Stage3
+        guid: f0d0efa5a30b7b4185a87233efeb10cc
+        id: 2231601909
+        PathAndIcons:
+        - ElementName: Korea_Stage3
+          ObjectType: 8
+      - name: Korea_Stage4
+        guid: 5b103f2d6a8763469a33641977aeb30d
+        id: 2231601906
+        PathAndIcons:
+        - ElementName: Korea_Stage4
+          ObjectType: 8
+      - name: Maya_Stage1
+        guid: 8cfec7c36fdd994a92e424bd48aead01
+        id: 1961685839
+        PathAndIcons:
+        - ElementName: Maya_Stage1
+          ObjectType: 8
+      - name: Maya_Stage2
+        guid: bc6a60b9958ed04994d35b578f23709c
+        id: 1961685836
+        PathAndIcons:
+        - ElementName: Maya_Stage2
+          ObjectType: 8
+      - name: Maya_Stage3
+        guid: e298b84aa428fd4db9ed8999e63a105b
+        id: 1961685837
+        PathAndIcons:
+        - ElementName: Maya_Stage3
+          ObjectType: 8
+      - name: Maya_Stage4
+        guid: 2c529b3e67cdea4fa06bd0ae808df1e6
+        id: 1961685834
+        PathAndIcons:
+        - ElementName: Maya_Stage4
+          ObjectType: 8
+      - name: Mesopotamian_Stage1
+        guid: fb3852533f19bb45bf5ec3499f51f873
+        id: 3202548000
+        PathAndIcons:
+        - ElementName: Mesopotamian_Stage1
+          ObjectType: 8
+      - name: Mesopotamian_Stage2
+        guid: f379072849cb6240b05331ee5b97e55d
+        id: 3202548003
+        PathAndIcons:
+        - ElementName: Mesopotamian_Stage2
+          ObjectType: 8
+      - name: Mesopotamian_Stage3
+        guid: 2d4cd6da19b7724db8ea5b8fb3715b02
+        id: 3202548002
+        PathAndIcons:
+        - ElementName: Mesopotamian_Stage3
+          ObjectType: 8
+      - name: None
+        guid: c4ef14278314cd4b8f0410c78908c02b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Renaissance_Stage1
+        guid: 957afdb883e50c4288a4268bb1ed6063
+        id: 1387657375
+        PathAndIcons:
+        - ElementName: Renaissance_Stage1
+          ObjectType: 8
+      - name: Renaissance_Stage2
+        guid: 4636ffe2d5693a449dbc69a515cf51b5
+        id: 1387657372
+        PathAndIcons:
+        - ElementName: Renaissance_Stage2
+          ObjectType: 8
+      - name: Renaissance_Stage3
+        guid: cd7176119d3f154baed27cecfdaa2dbf
+        id: 1387657373
+        PathAndIcons:
+        - ElementName: Renaissance_Stage3
+          ObjectType: 8
+      - name: Renaissance_Stage4
+        guid: b03baddc663b614aa24bb6d1d49a36bb
+        id: 1387657370
+        PathAndIcons:
+        - ElementName: Renaissance_Stage4
+          ObjectType: 8
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: fecb848b2a688e409b70fc96a8e85604
-    m_lastTime: -8586627686142261902
+    m_lastTime: -8586627031314775808
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 3966ec568a5ef448a560e3474e23e91a
-    m_lastTime: -8586627686142261902
+    m_lastTime: -8586627737154775808
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /Babel_9000
+  - /Babel_9000/Events
+  - /Babel_9000/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

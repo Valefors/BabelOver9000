@@ -7,6 +7,8 @@ public class Bubble : MonoBehaviour {
 	public KeyCode key;
 	public KeyCode key2;
 
+	[SerializeField] string hitSoundName = "";
+
 	SpriteRenderer sr;
 
 	bool active = false;
@@ -48,7 +50,7 @@ public class Bubble : MonoBehaviour {
 			if((Input.GetKeyDown(key) || Input.GetKeyDown(key2)) && active)
 			{
 				if(note.gameObject == null) return;
-
+				AkSoundEngine.PostEvent(hitSoundName, gameObject);
 				if (note.GetComponent<Note>().isSpecial) {
 					SetModeActive();
 				}
@@ -61,6 +63,7 @@ public class Bubble : MonoBehaviour {
 	void SetModeActive()
 	{
 		sr.sprite = bubbleActivate;
+		AkSoundEngine.PostEvent("Play_Bubble1", gameObject);
 		LevelManager.instance.IncrementBubbleActivateNumber();
 	}
 
@@ -100,7 +103,7 @@ public class Bubble : MonoBehaviour {
 
 		if(col.gameObject.tag == "Note")
 		{
-
+			AkSoundEngine.PostEvent("Play_Input_Miss", gameObject);
 			if(col.GetComponent<Note>().isSpecial) LevelManager.instance.shouldReplay = true; 
 		}
 	}
