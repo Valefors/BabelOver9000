@@ -52,7 +52,6 @@ public class StartOptions : MonoBehaviour {
 
 			//Set the trigger of Animator animColorFade to start transition to the FadeToOpaque state.
 			animColorFade.SetTrigger ("fade");
-			SceneManager.LoadScene("RythmScene");
 			//SceneManager.LoadScene("RythmScene");
 		} 
 
@@ -111,16 +110,17 @@ public class StartOptions : MonoBehaviour {
 
 		//If changeMusicOnStart is true, fade out volume of music group of AudioMixer by calling FadeDown function of PlayMusic, using length of fadeColorAnimationClip as time. 
 		//To change fade time, change length of animation "FadeToColor"
-		if (changeMusicOnStart) 
+		/*if (changeMusicOnStart) 
 		{
 			//Wait until game has started, then play new music
 			Invoke ("PlayNewMusic", fadeAlphaAnimationClip.length);
-		}
+		}*/
 		//Set trigger for animator to start animation fading out Menu UI
 		animMenuAlpha.SetTrigger ("fade");
 		Invoke("HideDelayed", fadeAlphaAnimationClip.length);
 		//SceneManager.LoadScene("RythmScene");
 		Debug.Log ("Game started in same scene! Put your game starting stuff here.");
+		showPanels.StartGame();
 	}
 
 

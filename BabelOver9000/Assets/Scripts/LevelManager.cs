@@ -21,6 +21,7 @@ public class LevelManager : MonoBehaviour {
 	int currentBubblesActivate = 0;
 
 	public Bubble[] bubblesArray;
+	[SerializeField] Camera cam;
 
 	//int patternIndex = 0;
 
@@ -59,14 +60,17 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		FirstSpawnPattern();
 		NUMBER_LEVELS = patternsArray.Length;
 
 		chantierSprite = Resources.Load<Sprite>("Sprites/Chantier");
+	}
+	
+	public void LaunchLevel(){
+		FirstSpawnPattern();
 		newFloor = Instantiate(floor, new Vector3(0, 0, 0), Quaternion.identity);
 		newFloor.GetComponent<SpriteRenderer>().sprite = chantierSprite;
 	}
-	
+
 	public void IncrementBubbleActivateNumber(){
 		currentBubblesActivate ++;
 
@@ -120,7 +124,8 @@ public class LevelManager : MonoBehaviour {
 
 	void MoveCamera()
 	{
-		Vector3 camPos = Camera.main.gameObject.transform.position;
+		print(Camera.main);
+		Vector3 camPos = cam.gameObject.transform.position;
 
 		float newX = camPos.x;
 		float newY = camPos.y + FLOOR_OFFSET_Y;
@@ -128,7 +133,7 @@ public class LevelManager : MonoBehaviour {
 
 		Vector3 newPos = new Vector3(newX, newY, newZ);
 
-		StartCoroutine(MoveCameraFromTo(Camera.main.gameObject.transform, camPos, newPos, 5));
+		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, newPos, 5));
 	}
 
 	IEnumerator MoveCameraFromTo(Transform objectToMove, Vector3 a, Vector3 b, float speed) 
@@ -201,10 +206,10 @@ public class LevelManager : MonoBehaviour {
 
 	void EndLevel(){
 		print("END GAME");
-		Vector3 camPos = Camera.main.gameObject.transform.position;
+		Vector3 camPos = cam.gameObject.transform.position;
 
 		HideBubbles();
-		StartCoroutine(MoveCameraFromTo(Camera.main.gameObject.transform, camPos, finalCamPos, 10));
+		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, finalCamPos, 10));
 	}
 
 
