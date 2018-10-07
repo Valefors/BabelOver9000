@@ -34,6 +34,8 @@ public class LevelManager : MonoBehaviour {
 	GameObject newFloor;
 	//int spriteIndex = 0;
 
+	Vector3 finalCamPos = new Vector3(0f, 25f, -45f);
+
 	int level = 0;
 	public bool shouldReplay = false;
 
@@ -142,9 +144,11 @@ public class LevelManager : MonoBehaviour {
          }
          objectToMove.position = b;
 
-         MoveBubbles();
-         AddFloor();
-         SpawnPattern();
+         if(level < NUMBER_LEVELS){
+         	MoveBubbles();
+         	AddFloor();
+         	SpawnPattern();
+         }
  	}
 
 	void AddFloor()
@@ -197,7 +201,10 @@ public class LevelManager : MonoBehaviour {
 
 	void EndLevel(){
 		print("END GAME");
+		Vector3 camPos = Camera.main.gameObject.transform.position;
 
+		HideBubbles();
+		StartCoroutine(MoveCameraFromTo(Camera.main.gameObject.transform, camPos, finalCamPos, 10));
 	}
 
 
