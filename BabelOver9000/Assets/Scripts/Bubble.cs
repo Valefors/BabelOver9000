@@ -1,11 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class Bubble : MonoBehaviour {
 
-	public KeyCode key;
-	public KeyCode key2;
+	//public KeyCode key;
+	//public KeyCode key2;
+    public string key;
+    public Player player;
+
 
 	[SerializeField] string hitSoundName = "";
 
@@ -31,23 +35,26 @@ public class Bubble : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		old = sr.color;
-	}
+        player = ReInput.players.GetPlayer(0);
+    }
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		if(createMode)
-		{
-			if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2))
+        {
+			//if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2))
+            if(player.GetButtonDown(key))
 			{
 				Instantiate(n, transform.position, Quaternion.identity);
 			}
 		}
 
 		else{
-			if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2)) StartCoroutine(Pressed());
+			//if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2)) StartCoroutine(Pressed());
+            if (player.GetButtonDown(key)) StartCoroutine(Pressed());
 
-			if((Input.GetKeyDown(key) || Input.GetKeyDown(key2)) && active)
+            if ((player.GetButtonDown(key)) && active)
 			{
 				if(note.gameObject == null) return;
 				AkSoundEngine.PostEvent(hitSoundName, gameObject);
