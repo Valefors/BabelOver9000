@@ -19,13 +19,13 @@ public class Bubble : MonoBehaviour {
 	public bool createMode;
 	public GameObject n;
 
-	Sprite bubbleActivate;
-	Sprite bubbleUnactivate;
+    [SerializeField] Sprite bubbleActivate;
+    [SerializeField] Sprite bubbleUnactivate;
 
 	void Awake(){
 		sr = GetComponent<SpriteRenderer>();
-		bubbleActivate = Resources.Load<Sprite>("Sprites/Bubble_Activate");
-		bubbleUnactivate = Resources.Load<Sprite>("Sprites/Bubble");
+		//bubbleActivate = Resources.Load<Sprite>("Sprites/Bubble_Activate");
+		//bubbleUnactivate = Resources.Load<Sprite>("Sprites/Bubble");
 	}
 
 	// Use this for initialization
