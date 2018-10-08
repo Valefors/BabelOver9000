@@ -20,6 +20,10 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     private GameObject clouds;
     private Animator cloudsAnimator;
+    [SerializeField]
+    private GameObject cloudsCiv;
+    private Animator cloudsCivAnimator;
+    private bool useGodHand = false;
 
 
 	[Header("BUBBLES")]
@@ -33,7 +37,7 @@ public class LevelManager : MonoBehaviour {
 
 	[Header("FLOORS")]
 	public GameObject floor;
-	[SerializeField] int floorPosY = 0;
+	[SerializeField] public int floorPosY = 0;
 	public int FLOOR_OFFSET_Y = 3;
 	[SerializeField] Sprite[] spriteFloorsArray;
 
@@ -74,7 +78,9 @@ public class LevelManager : MonoBehaviour {
 		chantierSprite = Resources.Load<Sprite>("Sprites/Tour/Chantier");
 
         cloudsAnimator = clouds.GetComponent<Animator>();
-	}
+
+        cloudsCivAnimator = cloudsCiv.GetComponent<Animator>();
+    }
 	
 	public void LaunchLevel(){
 		FirstSpawnPattern();
@@ -114,9 +120,22 @@ public class LevelManager : MonoBehaviour {
 
 		level++;
 
-		if(level == LEVELS_MAYA) print("Maya");
-		if(level == LEVELS_RENAISSANCE) print("Renaissance");
-		if(level == LEVELS_KOREA) print("Korea");
+        if (level == LEVELS_MAYA)
+        {
+            print("Maya");
+            useGodHand = true;
+        }
+		if(level == LEVELS_RENAISSANCE)
+        {
+            print("Renaissance");
+            useGodHand = true;
+        }
+
+		if(level == LEVELS_KOREA)
+        {
+            print("Korea");
+            useGodHand = true;
+        }
 
 		if(level >= NUMBER_LEVELS) {
 			UpdateFloorSprite(level-1);
@@ -125,8 +144,18 @@ public class LevelManager : MonoBehaviour {
 		}
 
 		HideBubbles();
-        clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
-        cloudsAnimator.SetTrigger("CloudAnim");
+
+        if (useGodHand)
+        {
+            cloudsCiv.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
+            cloudsCivAnimator.SetTrigger("CloudAnim");
+            useGodHand = false;
+        }
+        else
+        {
+            clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
+            cloudsAnimator.SetTrigger("CloudAnim");
+        }
 	}
 
     public void LaunchTransition()
@@ -271,6 +300,4 @@ public class LevelManager : MonoBehaviour {
         camPos = cam.gameObject.transform.position;
         StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, firstFinalCamPos, secondFinalCamPos, 10));
     }
-
-
 }
