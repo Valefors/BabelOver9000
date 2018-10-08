@@ -17,6 +17,9 @@ public class LevelManager : MonoBehaviour {
 	[SerializeField] int LEVELS_MAYA;
 	[SerializeField] int LEVELS_RENAISSANCE;
 	[SerializeField] int LEVELS_KOREA;
+    [SerializeField]
+    private GameObject clouds;
+    private Animator cloudsAnimator;
 
 
 	[Header("BUBBLES")]
@@ -67,6 +70,8 @@ public class LevelManager : MonoBehaviour {
 		NUMBER_LEVELS = patternsArray.Length;
 
 		chantierSprite = Resources.Load<Sprite>("Sprites/Tour/Chantier");
+
+        cloudsAnimator = clouds.GetComponent<Animator>();
 	}
 	
 	public void LaunchLevel(){
@@ -118,11 +123,17 @@ public class LevelManager : MonoBehaviour {
 		}
 
 		HideBubbles();
-		UpdateFloorSprite(level);
-		MoveCamera();
-
-		shouldReplay = false;
+        clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
+        cloudsAnimator.SetTrigger("CloudAnim");
 	}
+
+    public void LaunchTransition()
+    {
+        UpdateFloorSprite(level);
+        MoveCamera();
+
+        shouldReplay = false;
+    }
 
 	void MoveCamera()
 	{
@@ -198,7 +209,7 @@ public class LevelManager : MonoBehaviour {
 	void UpdateFloorSprite(int pLevel)
 	{
 		print("update floor");
-		newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel];
+        newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel];
 		AkSoundEngine.PostEvent("End_Construction", gameObject);
 		
 	}
