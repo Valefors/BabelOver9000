@@ -183,8 +183,8 @@ public class LevelManager : MonoBehaviour {
 
         if (in_type == AkCallbackType.AK_MusicSyncEntry)
         {
-            NextLevel();
-            /*if (!shouldReplay){
+            //NextLevel();
+            if (!shouldReplay){
         		//print("next level");
         		//AddFloor();
 				NextLevel();
@@ -196,7 +196,7 @@ public class LevelManager : MonoBehaviour {
 				currentBubblesActivate = 0;
 
 				shouldReplay = false;
-         	}*/
+         	}
         }
     }
 
