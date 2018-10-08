@@ -155,7 +155,7 @@ public class LevelManager : MonoBehaviour {
 	{
          float step = (speed / (a - b).magnitude) * Time.fixedDeltaTime;
          float t = 0;
-         AkSoundEngine.PostEvent("Play_Construction", gameObject);
+         //AkSoundEngine.PostEvent("Play_Construction", gameObject);
 
          while (t <= 1.0f) 
          {
@@ -267,7 +267,7 @@ public class LevelManager : MonoBehaviour {
 	void EndLevel(){
 		print("END GAME");
 		Vector3 camPos = cam.gameObject.transform.position;
-        AkSoundEngine.PostEvent("Play_End_Game", gameObject);
+        AkSoundEngine.PostEvent("Play_End", gameObject);
 
         HideBubbles();
 		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, firstFinalCamPos, 5));
