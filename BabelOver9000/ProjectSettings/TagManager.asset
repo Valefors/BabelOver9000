@@ -57,3 +57,6 @@ TagManager:
   - name: Note
     uniqueID: 2642455837
     locked: 0
+  - name: Clouds
+    uniqueID: 24924641
+    locked: 0
