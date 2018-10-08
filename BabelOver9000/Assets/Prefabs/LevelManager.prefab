@@ -68,43 +68,28 @@ MonoBehaviour:
   - Play_Korea_Stage3
   - Play_Korea_Stage4
   patternsArray:
-  - {fileID: 1646043609665536, guid: 19b8d0593dca6f945aadfc89981d5b10, type: 2}
-  - {fileID: 1604462708740032, guid: f58146a5384f76e4c92ded87834c3c8a, type: 2}
-  - {fileID: 1122490588782850, guid: d1ee01095d0f1924dab9e14b2ba0ec58, type: 2}
-  - {fileID: 1011918346833692, guid: 0978811cb0225c449970db9ba58fa847, type: 2}
-  - {fileID: 1019490940747378, guid: acd6530f57d60af4fb56d4b4a684217d, type: 2}
-  - {fileID: 1508738929255530, guid: d08b1515fa3cd494394d61f940a13910, type: 2}
-  - {fileID: 1081608024456062, guid: 975c47b37465a81449f5d8edb9e7ab17, type: 2}
-  - {fileID: 1346923145105294, guid: 5a3f5877144a00d4b95430d6ace391ae, type: 2}
-  - {fileID: 1182154633815258, guid: 82f058fc61d4ff748b2f7ddca3e7b22c, type: 2}
-  - {fileID: 1322410146040944, guid: dd1278756cc8fcd44a228fcd2f417289, type: 2}
-  - {fileID: 1597701346946604, guid: 614569c00fd01fe42914da6efc328cc8, type: 2}
-  - {fileID: 1483094689241900, guid: 3c65e9fccf88926428a988814d0fc52c, type: 2}
-  - {fileID: 1282254473630754, guid: cce15f5514591bc41825f2fbbd71cd65, type: 2}
-  - {fileID: 1867890203632812, guid: 4a2167e0ab87ce643be34d9f95e6dcb1, type: 2}
-  - {fileID: 1881821955278698, guid: 7a0a4a26174418d4db37deffa5b5a4fe, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
   patternsSpawn: {fileID: 0}
+  spawnPosY: 10
   NUMBER_LEVELS: 15
   LEVELS_MAYA: 3
   LEVELS_RENAISSANCE: 7
   LEVELS_KOREA: 11
   clouds: {fileID: 0}
-  spawnPatternArray:
-  - {x: 0, y: 35.7, z: 0}
-  - {x: 0, y: 50, z: 0}
-  - {x: 0, y: 76, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
   BUBBLES_NUMBER_MAX: 5
   bubblesArray:
   - {fileID: 0}

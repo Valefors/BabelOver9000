@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour {
 	[Space()]
 	public GameObject[] patternsArray;
 	[SerializeField] Transform patternsSpawn;
-	//[SerializeField] float spawnPosY = 0f;
+	[SerializeField] float spawnPosY = 0f;
 	[SerializeField] int NUMBER_LEVELS;
 	[Space()]
 	[SerializeField] int LEVELS_MAYA;
@@ -20,7 +20,10 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     private GameObject clouds;
     private Animator cloudsAnimator;
-    [SerializeField] Vector3[] spawnPatternArray;
+    [SerializeField]
+    private GameObject cloudsCiv;
+    private Animator cloudsCivAnimator;
+    private bool useGodHand = false;
 
 
 	[Header("BUBBLES")]
@@ -34,7 +37,7 @@ public class LevelManager : MonoBehaviour {
 
 	[Header("FLOORS")]
 	public GameObject floor;
-	[SerializeField] int floorPosY = 0;
+	[SerializeField] public int floorPosY = 0;
 	public int FLOOR_OFFSET_Y = 3;
 	[SerializeField] Sprite[] spriteFloorsArray;
 
@@ -75,7 +78,9 @@ public class LevelManager : MonoBehaviour {
 		chantierSprite = Resources.Load<Sprite>("Sprites/Tour/Chantier");
 
         cloudsAnimator = clouds.GetComponent<Animator>();
-	}
+
+        cloudsCivAnimator = cloudsCiv.GetComponent<Animator>();
+    }
 	
 	public void LaunchLevel(){
 		FirstSpawnPattern();
@@ -115,9 +120,22 @@ public class LevelManager : MonoBehaviour {
 
 		level++;
 
-		if(level == LEVELS_MAYA) print("Maya");
-		if(level == LEVELS_RENAISSANCE) print("Renaissance");
-		if(level == LEVELS_KOREA) print("Korea");
+        if (level == LEVELS_MAYA)
+        {
+            print("Maya");
+            useGodHand = true;
+        }
+		if(level == LEVELS_RENAISSANCE)
+        {
+            print("Renaissance");
+            useGodHand = true;
+        }
+
+		if(level == LEVELS_KOREA)
+        {
+            print("Korea");
+            useGodHand = true;
+        }
 
 		if(level >= NUMBER_LEVELS) {
 			UpdateFloorSprite(level-1);
@@ -126,8 +144,18 @@ public class LevelManager : MonoBehaviour {
 		}
 
 		HideBubbles();
-        clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
-        cloudsAnimator.SetTrigger("CloudAnim");
+
+        if (useGodHand)
+        {
+            cloudsCiv.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
+            cloudsCivAnimator.SetTrigger("CloudAnim");
+            useGodHand = false;
+        }
+        else
+        {
+            clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
+            cloudsAnimator.SetTrigger("CloudAnim");
+        }
 	}
 
     public void LaunchTransition()
@@ -155,7 +183,7 @@ public class LevelManager : MonoBehaviour {
 	{
          float step = (speed / (a - b).magnitude) * Time.fixedDeltaTime;
          float t = 0;
-         //AkSoundEngine.PostEvent("Play_Construction", gameObject);
+         AkSoundEngine.PostEvent("Play_Construction", gameObject);
 
          while (t <= 1.0f) 
          {
@@ -183,8 +211,7 @@ public class LevelManager : MonoBehaviour {
 
         if (in_type == AkCallbackType.AK_MusicSyncEntry)
         {
-            //NextLevel();
-            if (!shouldReplay){
+        	if(!shouldReplay){
         		//print("next level");
         		//AddFloor();
 				NextLevel();
@@ -212,7 +239,7 @@ public class LevelManager : MonoBehaviour {
 	void UpdateFloorSprite(int pLevel)
 	{
 		//print("update floor");
-		if(pLevel < 15) newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel - 1];
+		if(pLevel > 15) newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel - 1];
 		AkSoundEngine.PostEvent("End_Construction", gameObject);
 		
 	}
@@ -243,31 +270,29 @@ public class LevelManager : MonoBehaviour {
 		print(statesArray[level]);
 
 		//AkSoundEngine.PostEvent(dialog.WwiseEvent, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
-		float posX = spawnPatternArray[0].x;
-        float posY = spawnPatternArray[0].y;
-        float posZ = spawnPatternArray[0].z;
+		float posX = patternsSpawn.position.x;
+		float posZ = patternsSpawn.position.z;
 
-		Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
-    }
+		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
+	}
 
 	void SpawnPattern()
 	{
         print(statesArray[level]);
-		if(level+1 < NUMBER_LEVELS) AkSoundEngine.PostEvent(statesArray[level+1], gameObject); //ATTENTION LENGTH
+		if(level+1 < NUMBER_LEVELS) AkSoundEngine.PostEvent(statesArray[level + 1], gameObject); //ATTENTION LENGTH
 
-        float posX = spawnPatternArray[level].x;
-        float posY = spawnPatternArray[level].y;
-        float posZ = spawnPatternArray[level].z;
+		float posX = patternsSpawn.position.x;
+		float posZ = patternsSpawn.position.z;
 
-        //if (!shouldReplay) posY += FLOOR_OFFSET_Y;
+		if(!shouldReplay) spawnPosY += FLOOR_OFFSET_Y;
 
-		Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
+		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
 	}
 
 	void EndLevel(){
 		print("END GAME");
 		Vector3 camPos = cam.gameObject.transform.position;
-        AkSoundEngine.PostEvent("Play_End", gameObject);
+        AkSoundEngine.PostEvent("Play_End_Game", gameObject);
 
         HideBubbles();
 		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, firstFinalCamPos, 5));
@@ -275,6 +300,4 @@ public class LevelManager : MonoBehaviour {
         camPos = cam.gameObject.transform.position;
         StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, firstFinalCamPos, secondFinalCamPos, 10));
     }
-
-
 }

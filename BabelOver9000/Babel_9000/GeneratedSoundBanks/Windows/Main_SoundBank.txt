@@ -11,7 +11,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	540733244	Play_Maya_Stage3			\Default Work Unit\Music\Play_Maya_Stage3	
 	540733245	Play_Maya_Stage2			\Default Work Unit\Music\Play_Maya_Stage2	
 	540733246	Play_Maya_Stage1			\Default Work Unit\Music\Play_Maya_Stage1	
-	873807182	Stop_Credits			\Default Work Unit\Music\Stop_Credits	
 	1042987450	Play_Select			\Default Work Unit\UI\Play_Select	
 	1598463209	Play_Construction			\Default Work Unit\Construction\Play_Construction	
 	1680374718	Play_Destruction			\Default Work Unit\Construction\Play_Destruction	
@@ -19,7 +18,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	1937964708	Play_Renaissance_Stage1			\Default Work Unit\Music\Play_Renaissance_Stage1	
 	1937964710	Play_Renaissance_Stage3			\Default Work Unit\Music\Play_Renaissance_Stage3	
 	1937964711	Play_Renaissance_Stage2			\Default Work Unit\Music\Play_Renaissance_Stage2	
-	2472290785	Play_End			\Default Work Unit\Music\Play_End	
 	2515027838	Play_Menu_Amb			\Default Work Unit\Play_Menu_Amb	
 	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
 	2855285458	Play_Hit5			\Default Work Unit\Feedbacks\Play_Hit5	
@@ -29,7 +27,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2855285462	Play_Hit1			\Default Work Unit\Feedbacks\Play_Hit1	
 	2878934361	Play_Input_Miss			\Default Work Unit\Feedbacks\Play_Input_Miss	
 	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
-	2970769112	Play_Credits			\Default Work Unit\Music\Play_Credits	
 	3073912520	Stop_Menu_Amb			\Default Work Unit\Stop_Menu_Amb	
 	3381697361	Play_Bubble1			\Default Work Unit\Feedbacks\Play_Bubble1	
 	3381697362	Play_Bubble2			\Default Work Unit\Feedbacks\Play_Bubble2	
@@ -57,7 +54,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	374706674	Musique_Fin_BothV2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_Fin_BothV2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\End_Game\Musique_Fin_BothV2\Musique_Fin_BothV2		4224064
 	411808110	SFX_Construction_Woods_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woods_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woods_1		161344
 	437016939	SFX_Construction_Woosh_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woosh_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woosh_3		161344
-	440305485	Musique_Fin_Piano	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_Fin_Piano_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Credits\Musique_Fin_Piano\Musique_Fin_Piano		4224064
 	447995872	SFX_Menu_Amb	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Menu_Amb_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Menu_Amb		16128064
 	452465904	SFX_Stage_Constructed	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Stage_Constructed_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Ending_Stage\SFX_Stage_Constructed		153664
 	539255988	Musique_2_Mayan_Stage4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_2_Mayan_Stage4_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mayan_Stage4\Musique_2_Mayan_Stage4\Musique_2_Mayan_Stage4		3456064
