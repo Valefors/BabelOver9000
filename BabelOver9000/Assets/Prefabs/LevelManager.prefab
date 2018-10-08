@@ -52,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statesArray:
-  - Play_Meso_Stage2
+  - Play_Meso_Stage1
   - Play_Meso_Stage2
   - Play_Meso_Stage3
   - Play_Maya_Stage1
@@ -68,23 +68,23 @@ MonoBehaviour:
   - Play_Korea_Stage3
   - Play_Korea_Stage4
   patternsArray:
-  - {fileID: 1535683956189568, guid: be665e1e3a6ff3c4d897db74e51afbf6, type: 2}
-  - {fileID: 1535683956189568, guid: be665e1e3a6ff3c4d897db74e51afbf6, type: 2}
-  - {fileID: 1398848968901742, guid: 5a8d8c714eda08e4ab6bccfaabc85b3a, type: 2}
-  - {fileID: 1029118218149246, guid: 64b18078ae71af841bb8a12e798d8f22, type: 2}
-  - {fileID: 1166190510739696, guid: 8a06a19552cb6e94db67a3e533c9179a, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
-  - {fileID: 1182104444697522, guid: c8a8ddf04bafc844f993df45aa4aa4fd, type: 2}
+  - {fileID: 1893104300839820, guid: 4677403477763c044b029c345e7535e8, type: 2}
+  - {fileID: 1443129689771272, guid: 2766d311e64c1bd42a2b269fe739b0cf, type: 2}
+  - {fileID: 1109136096737234, guid: e7e87f6e09e64444485e0bdacbd235c0, type: 2}
+  - {fileID: 1315404856120346, guid: 507480586fb2da24a8d34a4e3f327958, type: 2}
+  - {fileID: 1059286446125112, guid: 5a2f0f111bd083a46bd224feba3c6767, type: 2}
+  - {fileID: 1665276635669574, guid: 93abc3ffbe77a6f4baa548121f17c8ef, type: 2}
+  - {fileID: 1110018395218532, guid: 8f60cf960e37cf044b58119dd36d6cec, type: 2}
+  - {fileID: 1567572047581408, guid: 6119552371366c2479bc548e7e90dc3f, type: 2}
+  - {fileID: 1089917163187864, guid: 2032895fe40eeb249875cccce3dc0740, type: 2}
+  - {fileID: 1954724351186978, guid: dafd3bbb7c64afd4e99d0025457d542d, type: 2}
+  - {fileID: 1698558078756572, guid: f8075aa42ed5194458e722eb7326394c, type: 2}
+  - {fileID: 1288141528439388, guid: 5225a785fbbd7d14a8a313ba474fff6d, type: 2}
+  - {fileID: 1089555596955848, guid: 54c0607e61207364d854fdeb1dd959ea, type: 2}
+  - {fileID: 1181328356507156, guid: 97f81a2e13ed6e243b7ba563a25ad0d2, type: 2}
+  - {fileID: 1744739918717788, guid: 95af573c01639e64d8c894232795dc5b, type: 2}
   patternsSpawn: {fileID: 0}
-  spawnPosY: 233
+  spawnPosY: 50
   NUMBER_LEVELS: 15
   LEVELS_MAYA: 3
   LEVELS_RENAISSANCE: 7

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Proto.unity
     guid: 457d49d59e9f439459d9e9f1b5415e6a
+  - enabled: 0
+    path: Assets/Scenes/Upcoming.unity
+    guid: f1aaa93c45494fb46a5090896b350406
   m_configObjects: {}

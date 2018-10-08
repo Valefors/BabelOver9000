@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour {
 	[Space()]
 	public GameObject[] patternsArray;
 	[SerializeField] Transform patternsSpawn;
-	[SerializeField] float spawnPosY = 235f;
+	[SerializeField] float spawnPosY = 0f;
 	[SerializeField] int NUMBER_LEVELS;
 	[Space()]
 	[SerializeField] int LEVELS_MAYA;
@@ -66,7 +66,7 @@ public class LevelManager : MonoBehaviour {
 	void Start () {
 		NUMBER_LEVELS = patternsArray.Length;
 
-		chantierSprite = Resources.Load<Sprite>("Sprites/Chantier");
+		chantierSprite = Resources.Load<Sprite>("Sprites/Tour/Chantier");
 	}
 	
 	public void LaunchLevel(){
@@ -75,16 +75,16 @@ public class LevelManager : MonoBehaviour {
 		newFloor.GetComponent<SpriteRenderer>().sprite = chantierSprite;
 	}
 
-	public void IncrementBubbleActivateNumber(){
+	/*public void IncrementBubbleActivateNumber(){
 		currentBubblesActivate ++;
 
 		if(currentBubblesActivate == BUBBLES_NUMBER_MAX)
 		{
 			NextLevel();
 		}
-	}
+	}*/
 
-	public void CheckReplay() {
+	/*public void CheckReplay() {
 		print("zero second");
 		if(shouldReplay == true) 
 		{
@@ -92,18 +92,16 @@ public class LevelManager : MonoBehaviour {
 		}
 
 		//else NextLevel();
-	}
+	}*/
 
-	IEnumerator CheckReplayWaitForSeconds()
+	/*IEnumerator CheckReplayWaitForSeconds()
 	{
 		yield return new WaitForSeconds(1.0f);
 
 		SpawnPattern();
 		MoveBubbles();
 		currentBubblesActivate = 0;
-
-		shouldReplay = false;
-	}
+	}*/
 
 	void NextLevel(){
 
@@ -153,9 +151,11 @@ public class LevelManager : MonoBehaviour {
          }
          objectToMove.position = b;
 
-         /*if(level < NUMBER_LEVELS){
-
-         }*/
+         if(level < NUMBER_LEVELS){
+         	SpawnPattern();
+			MoveBubbles();
+			AddFloor();
+         }
  	}
 
  	void Terminate(object in_cookie, AkCallbackType in_type, object in_info)
@@ -165,16 +165,30 @@ public class LevelManager : MonoBehaviour {
     		return;
     	}
 
-    	print("ca marche");
-        if (in_type == AkCallbackType.AK_MusicSyncEntry){
-			MoveBubbles();
-         	AddFloor();
-         	SpawnPattern();
+    	print(shouldReplay);
+    	//if(shouldReplay) return;
+
+        if (in_type == AkCallbackType.AK_MusicSyncEntry)
+        {
+        	if(!shouldReplay){
+        		print("next level");
+        		//AddFloor();
+				NextLevel();
+         	}
+
+         	if (shouldReplay){
+         		SpawnPattern();
+				MoveBubbles();
+				currentBubblesActivate = 0;
+
+				shouldReplay = false;
+         	}
         }
     }
 
 	void AddFloor()
 	{
+		print("AddFloor");
 		floorPosY += FLOOR_OFFSET_Y;
 
 		newFloor = Instantiate(floor, new Vector3(0, floorPosY, 0), Quaternion.identity);
@@ -183,6 +197,7 @@ public class LevelManager : MonoBehaviour {
 
 	void UpdateFloorSprite(int pLevel)
 	{
+		print("update floor");
 		newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel];
 		AkSoundEngine.PostEvent("End_Construction", gameObject);
 		
@@ -215,6 +230,7 @@ public class LevelManager : MonoBehaviour {
 
 		//AkSoundEngine.PostEvent(dialog.WwiseEvent, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
 		float posX = patternsSpawn.position.x;
+		print(patternsSpawn.position.x);
 		float posZ = patternsSpawn.position.z;
 
 		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
@@ -222,8 +238,8 @@ public class LevelManager : MonoBehaviour {
 
 	void SpawnPattern()
 	{
+		print("SpawnPattern");
 		AkSoundEngine.PostEvent(statesArray[level + 1], gameObject); //ATTENTION LENGTH
-		print(statesArray[level]);
 
 		float posX = patternsSpawn.position.x;
 		float posZ = patternsSpawn.position.z;

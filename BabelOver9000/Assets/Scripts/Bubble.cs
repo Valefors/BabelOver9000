@@ -64,7 +64,7 @@ public class Bubble : MonoBehaviour {
 	{
 		sr.sprite = bubbleActivate;
 		AkSoundEngine.PostEvent("Play_Bubble1", gameObject);
-		LevelManager.instance.IncrementBubbleActivateNumber();
+		//LevelManager.instance.IncrementBubbleActivateNumber();
 	}
 
 	public void SetModeNormal(){
@@ -93,7 +93,7 @@ public class Bubble : MonoBehaviour {
 			note = col.gameObject;
 
 			if(note.GetComponent<Note>().isSpecial) activeSpecial = true;
-			if(note.GetComponent<Note>().isLastNote) LevelManager.instance.CheckReplay();
+			//if(note.GetComponent<Note>().isLastNote) LevelManager.instance.CheckReplay();
 		}
 	}
 
