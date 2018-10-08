@@ -7,7 +7,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-6</Value>
+								<Value>-9</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -88,6 +88,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="SFX_Bubble_Completed_1" ID="{8A1C0EF0-061A-4759-9A01-E00331EC5D73}" ShortID="709085411">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="8.38815789473684E-02"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.128289473684211"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.241776315789474"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.624177631578947"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>SFX_Bubble_Completed_1.wav</AudioFile>
 								</AudioFileSource>

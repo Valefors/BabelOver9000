@@ -24,6 +24,7 @@
 						<State Name="Korea_Stage2" ID="{0755A849-3B37-42EF-8C6C-AF48FC7BFC06}"/>
 						<State Name="Korea_Stage3" ID="{A5EFD0F0-0BA3-417B-85A8-7233EFEB10CC}"/>
 						<State Name="Korea_Stage4" ID="{2D3F105B-876A-4663-9A33-641977AEB30D}"/>
+						<State Name="End_Game" ID="{38B3C63F-ACDD-4345-B0C0-DE234BCB5BF6}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

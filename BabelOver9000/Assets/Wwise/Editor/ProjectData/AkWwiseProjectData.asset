@@ -42,7 +42,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d03ae198ad5a0248b8eaffa31a164703
-    m_lastTime: -8586626616558549291
+    m_lastTime: -8586625990789730611
     List:
     - name: End_Construction
       guid: 95a36b1da390cc46aafbe25b0659c149
@@ -156,6 +156,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Play_Credits
+      guid: 9d655e8f26f5b148ba0a02bfdd4e7fd2
+      id: 2970769112
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_Credits
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_Credits
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Play_Destruction
       guid: 7045cb748f5e8a4ea50faa68a6d4c829
       id: 1680374718
@@ -167,6 +181,20 @@ MonoBehaviour:
       - ElementName: Play_Destruction
         ObjectType: 3
       Path: Default Work Unit\Construction\Play_Destruction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_End_Game
+      guid: f0d9a26232309240af1ec36c37539a4c
+      id: 247285626
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Play_End_Game
+        ObjectType: 3
+      Path: Default Work Unit\Music\Play_End_Game
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -504,6 +532,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Credits
+      guid: 032b8c0992bbd54ebd8153f9a7988629
+      id: 873807182
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Stop_Credits
+        ObjectType: 3
+      Path: Default Work Unit\Music\Stop_Credits
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Menu_Amb
       guid: 6d7d68df6f9cd34294d2b0f32a07f201
       id: 3073912520
@@ -563,7 +605,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0a59d1c2764fdc48855ed5afa01900fa
-    m_lastTime: -8586627031314775808
+    m_lastTime: -8586625991202571082
     List:
     - name: Stage
       guid: f0ee5b73f2e84d48a2a4063c748d1c85
@@ -575,6 +617,12 @@ MonoBehaviour:
         ObjectType: 9
       Path: Default Work Unit\Stage
       values:
+      - name: End_Game
+        guid: 3fc6b338ddac4543b0c0de234bcb5bf6
+        id: 3717848113
+        PathAndIcons:
+        - ElementName: End_Game
+          ObjectType: 8
       - name: Korea_Stage1
         guid: eba3bba2b03e0240a141685aa617a764
         id: 2231601911

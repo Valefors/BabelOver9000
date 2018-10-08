@@ -118,6 +118,10 @@
 					<ShortName>SFX_Construction_Woods_3.wav</ShortName>
 					<Path>SFX\SFX_Construction_Woods_3_56D34C19.wem</Path>
 				</File>
+				<File Id="374706674" Language="SFX">
+					<ShortName>Musique_Fin_BothV2.wav</ShortName>
+					<Path>SFX\Musique_Fin_BothV2_8956FC97.wem</Path>
+				</File>
 				<File Id="411808110" Language="SFX">
 					<ShortName>SFX_Construction_Woods_1.wav</ShortName>
 					<Path>SFX\SFX_Construction_Woods_1_56D34C19.wem</Path>
@@ -180,7 +184,7 @@
 				</File>
 				<File Id="709085411" Language="SFX">
 					<ShortName>SFX_Bubble_Completed_1.wav</ShortName>
-					<Path>SFX\SFX_Bubble_Completed_1_56D34C19.wem</Path>
+					<Path>SFX\SFX_Bubble_Completed_1_5A778C82.wem</Path>
 				</File>
 				<File Id="741276038" Language="SFX">
 					<ShortName>SFX_Destruction.wav</ShortName>

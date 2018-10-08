@@ -41,9 +41,11 @@ public class LevelManager : MonoBehaviour {
 	GameObject newFloor;
 	//int spriteIndex = 0;
 
-	Vector3 finalCamPos = new Vector3(0f, 25f, -45f);
+	Vector3 firstFinalCamPos = new Vector3(0f, 4f, -16f);
+    Vector3 secondFinalCamPos = new Vector3(0f, 55f, -16f);
+    //Vector3 firstFinalCamPos = new Vector3(0f, 25f, -45f);
 
-	int level = 0;
+    int level = 0;
 	public bool shouldReplay = false;
 	bool firstPlay = true;
 
@@ -208,7 +210,7 @@ public class LevelManager : MonoBehaviour {
 	void UpdateFloorSprite(int pLevel)
 	{
 		//print("update floor");
-		newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel - 1];
+		if(pLevel > 15) newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel - 1];
 		AkSoundEngine.PostEvent("End_Construction", gameObject);
 		
 	}
@@ -261,10 +263,14 @@ public class LevelManager : MonoBehaviour {
 	void EndLevel(){
 		print("END GAME");
 		Vector3 camPos = cam.gameObject.transform.position;
+        AkSoundEngine.PostEvent("Play_End_Game", gameObject);
 
-		HideBubbles();
-		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, finalCamPos, 10));
-	}
+        HideBubbles();
+		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, firstFinalCamPos, 5));
+
+        camPos = cam.gameObject.transform.position;
+        StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, firstFinalCamPos, secondFinalCamPos, 10));
+    }
 
 
 }

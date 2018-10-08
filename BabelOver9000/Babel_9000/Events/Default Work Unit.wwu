@@ -433,6 +433,48 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Play_End_Game" ID="{62A2D9F0-3032-4092-AF1E-C36C37539A4C}">
+							<ChildrenList>
+								<Action Name="" ID="{07A819E7-B4B0-486A-BFAB-1228CCEA7C29}" ShortID="152404020">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="End_Game" ID="{38B3C63F-ACDD-4345-B0C0-DE234BCB5BF6}" WorkUnitID="{C2D1590A-4F76-48DC-855E-D5AFA01900FA}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Credits" ID="{8F5E659D-F526-48B1-BA0A-02BFDD4E7FD2}">
+							<ChildrenList>
+								<Action Name="" ID="{2F64C1C8-2980-41BF-A719-7962829E734E}" ShortID="546927893">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Credits" ID="{2244220B-E97F-4B1A-A2AE-7D6CDC86929F}" WorkUnitID="{85251494-71FA-4758-8FBF-901FD46BB671}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Credits" ID="{098C2B03-BB92-4ED5-BD81-53F9A7988629}">
+							<ChildrenList>
+								<Action Name="" ID="{70F6F66C-7D96-4B97-9269-A2AB991251FF}" ShortID="675239150">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Credits" ID="{2244220B-E97F-4B1A-A2AE-7D6CDC86929F}" WorkUnitID="{85251494-71FA-4758-8FBF-901FD46BB671}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="UI" ID="{AE58D0F4-CACF-4CD9-B6C0-3E5FCE3A8398}" ShortID="719832134">
