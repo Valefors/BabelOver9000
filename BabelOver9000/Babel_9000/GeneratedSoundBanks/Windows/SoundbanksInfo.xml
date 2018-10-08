@@ -29,7 +29,9 @@
 				<Event Id="3381697365" Name="Play_Bubble5" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble5"/>
 				<Event Id="311910498" Name="Play_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Click"/>
 				<Event Id="1598463209" Name="Play_Construction" ObjectPath="\Events\Default Work Unit\Construction\Play_Construction"/>
+				<Event Id="2970769112" Name="Play_Credits" ObjectPath="\Events\Default Work Unit\Music\Play_Credits"/>
 				<Event Id="1680374718" Name="Play_Destruction" ObjectPath="\Events\Default Work Unit\Construction\Play_Destruction"/>
+				<Event Id="2472290785" Name="Play_End" ObjectPath="\Events\Default Work Unit\Music\Play_End"/>
 				<Event Id="2855285462" Name="Play_Hit1" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit1"/>
 				<Event Id="2855285461" Name="Play_Hit2" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit2"/>
 				<Event Id="2855285460" Name="Play_Hit3" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit3"/>
@@ -54,6 +56,7 @@
 				<Event Id="1937964710" Name="Play_Renaissance_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage3"/>
 				<Event Id="1937964705" Name="Play_Renaissance_Stage4" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage4"/>
 				<Event Id="1042987450" Name="Play_Select" ObjectPath="\Events\Default Work Unit\UI\Play_Select"/>
+				<Event Id="873807182" Name="Stop_Credits" ObjectPath="\Events\Default Work Unit\Music\Stop_Credits"/>
 				<Event Id="3073912520" Name="Stop_Menu_Amb" ObjectPath="\Events\Default Work Unit\Stop_Menu_Amb"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Music\Stop_Music"/>
 			</IncludedEvents>
@@ -129,6 +132,10 @@
 				<File Id="437016939" Language="SFX">
 					<ShortName>SFX_Construction_Woosh_3.wav</ShortName>
 					<Path>SFX\SFX_Construction_Woosh_3_56D34C19.wem</Path>
+				</File>
+				<File Id="440305485" Language="SFX">
+					<ShortName>Musique_Fin_Piano.wav</ShortName>
+					<Path>SFX\Musique_Fin_Piano_8956FC97.wem</Path>
 				</File>
 				<File Id="447995872" Language="SFX">
 					<ShortName>SFX_Menu_Amb.wav</ShortName>

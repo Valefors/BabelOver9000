@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour {
 	[Space()]
 	public GameObject[] patternsArray;
 	[SerializeField] Transform patternsSpawn;
-	[SerializeField] float spawnPosY = 0f;
+	//[SerializeField] float spawnPosY = 0f;
 	[SerializeField] int NUMBER_LEVELS;
 	[Space()]
 	[SerializeField] int LEVELS_MAYA;
@@ -20,6 +20,7 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     private GameObject clouds;
     private Animator cloudsAnimator;
+    [SerializeField] Vector3[] spawnPatternArray;
 
 
 	[Header("BUBBLES")]
@@ -182,7 +183,8 @@ public class LevelManager : MonoBehaviour {
 
         if (in_type == AkCallbackType.AK_MusicSyncEntry)
         {
-        	if(!shouldReplay){
+            NextLevel();
+            /*if (!shouldReplay){
         		//print("next level");
         		//AddFloor();
 				NextLevel();
@@ -194,7 +196,7 @@ public class LevelManager : MonoBehaviour {
 				currentBubblesActivate = 0;
 
 				shouldReplay = false;
-         	}
+         	}*/
         }
     }
 
@@ -210,7 +212,7 @@ public class LevelManager : MonoBehaviour {
 	void UpdateFloorSprite(int pLevel)
 	{
 		//print("update floor");
-		if(pLevel > 15) newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel - 1];
+		if(pLevel < 15) newFloor.GetComponent<SpriteRenderer>().sprite = spriteFloorsArray[pLevel - 1];
 		AkSoundEngine.PostEvent("End_Construction", gameObject);
 		
 	}
@@ -241,23 +243,25 @@ public class LevelManager : MonoBehaviour {
 		print(statesArray[level]);
 
 		//AkSoundEngine.PostEvent(dialog.WwiseEvent, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
-		float posX = patternsSpawn.position.x;
-		float posZ = patternsSpawn.position.z;
+		float posX = spawnPatternArray[0].x;
+        float posY = spawnPatternArray[0].y;
+        float posZ = spawnPatternArray[0].z;
 
-		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
-	}
+		Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
+    }
 
 	void SpawnPattern()
 	{
         print(statesArray[level]);
-		if(level+1 < NUMBER_LEVELS) AkSoundEngine.PostEvent(statesArray[level + 1], gameObject); //ATTENTION LENGTH
+		if(level+1 < NUMBER_LEVELS) AkSoundEngine.PostEvent(statesArray[level+1], gameObject); //ATTENTION LENGTH
 
-		float posX = patternsSpawn.position.x;
-		float posZ = patternsSpawn.position.z;
+        float posX = spawnPatternArray[level].x;
+        float posY = spawnPatternArray[level].y;
+        float posZ = spawnPatternArray[level].z;
 
-		if(!shouldReplay) spawnPosY += FLOOR_OFFSET_Y;
+        //if (!shouldReplay) posY += FLOOR_OFFSET_Y;
 
-		Instantiate(patternsArray[level].gameObject, new Vector3(posX, spawnPosY, posZ), Quaternion.identity);
+		Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
 	}
 
 	void EndLevel(){

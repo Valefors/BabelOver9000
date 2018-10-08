@@ -28,15 +28,18 @@
 						<ObjectRef Name="Play_Maya_Stage1" ID="{C7207114-4570-47A7-9EAB-7C75CE2F5BA4}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Renaissance_Stage3" ID="{D56431FA-4D9A-4823-874E-A44246E6D8A1}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Construction" ID="{C28EC470-971A-4834-B0BE-9E06D733CC8A}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_Credits" ID="{8F5E659D-F526-48B1-BA0A-02BFDD4E7FD2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Input_Miss" ID="{2458BBA9-7399-48EE-854B-B41DF38B9F90}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit1" ID="{71E6AFCB-8ACA-494A-93C3-0ED03D63143C}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Korea_Stage2" ID="{4A552F8E-FDBE-4A57-B403-59FB26789B4F}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Meso_Stage3" ID="{5D35D612-3A9B-4B0E-BEC1-56A16BFD2DAB}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Bubble2" ID="{2336EF19-1E88-4BCB-AC3C-01C7241116C2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Play_End" ID="{08FFBAB2-7492-4C10-9F5F-D96D326B131D}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit5" ID="{B6E651B1-309F-4CDA-8126-EBBEAF451B79}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Hit4" ID="{6E376173-649B-4DC3-850F-55EB0381B8C3}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Bubble4" ID="{8F7C415B-A9C9-4E4C-9780-4D72B87479C2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Destruction" ID="{74CB4570-5E8F-4E8A-A50F-AA68A6D4C829}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Stop_Credits" ID="{098C2B03-BB92-4ED5-BD81-53F9A7988629}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Korea_Stage1" ID="{BA9D48D6-4115-4F5F-8984-DF44D705F98D}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Menu_Amb" ID="{942AB9BC-9AA6-4F65-85B0-0B734131EB32}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Play_Renaissance_Stage1" ID="{4F01308A-FF44-4FAC-888D-744EE3219080}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" Filter="7" Origin="Manual"/>
