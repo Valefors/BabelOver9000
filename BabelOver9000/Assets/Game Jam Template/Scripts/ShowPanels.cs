@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class ShowPanels : MonoBehaviour {
 
@@ -8,10 +9,22 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
 	public GameObject pausePanel;							//Store a reference to the Game Object PausePanel 
 	public GameObject ingame;
+    public GameObject startButton;
 
+    private void Start()
+    {
+        StartCoroutine(SelectContinueButtonLater(startButton));
+    }
 
-	//Call this function to activate and display the Options panel during the main menu
-	public void ShowOptionsPanel()
+    private IEnumerator SelectContinueButtonLater(GameObject selectableObject)
+    {
+        yield return null;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(selectableObject);
+    }
+
+    //Call this function to activate and display the Options panel during the main menu
+    public void ShowOptionsPanel()
 	{
 		optionsPanel.SetActive(true);
 		optionsTint.SetActive(true);

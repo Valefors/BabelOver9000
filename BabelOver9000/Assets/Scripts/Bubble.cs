@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Rewired;
 
 public class Bubble : MonoBehaviour {
 
-	public KeyCode key;
-	public KeyCode key2;
+    //public KeyCode key;
+    //public KeyCode key2;
+    public string key;
 
 	[SerializeField] string hitSoundName = "";
 
@@ -18,15 +20,17 @@ public class Bubble : MonoBehaviour {
 
 	public bool createMode;
 	public GameObject n;
+    private Player player;
 
     [SerializeField] Sprite bubbleActivate;
     [SerializeField] Sprite bubbleUnactivate;
 
 	void Awake(){
 		sr = GetComponent<SpriteRenderer>();
-		//bubbleActivate = Resources.Load<Sprite>("Sprites/Bubble_Activate");
-		//bubbleUnactivate = Resources.Load<Sprite>("Sprites/Bubble");
-	}
+        //bubbleActivate = Resources.Load<Sprite>("Sprites/Bubble_Activate");
+        //bubbleUnactivate = Resources.Load<Sprite>("Sprites/Bubble");
+        player = ReInput.players.GetPlayer(0);
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -38,16 +42,16 @@ public class Bubble : MonoBehaviour {
 	{
 		if(createMode)
 		{
-			if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2))
+			if(player.GetButtonDown(key))
 			{
 				Instantiate(n, transform.position, Quaternion.identity);
 			}
 		}
 
 		else{
-			if(Input.GetKeyDown(key) ||Input.GetKeyDown(key2)) StartCoroutine(Pressed());
+			if(player.GetButtonDown(key)) StartCoroutine(Pressed());
 
-			if((Input.GetKeyDown(key) || Input.GetKeyDown(key2)) && active)
+			if(player.GetButtonDown(key) && active)
 			{
 				if(note.gameObject == null) return;
 				AkSoundEngine.PostEvent(hitSoundName, gameObject);

@@ -69,7 +69,7 @@ MonoBehaviour:
   - Play_Korea_Stage4
   patternsArray:
   - {fileID: 1646043609665536, guid: 19b8d0593dca6f945aadfc89981d5b10, type: 2}
-  - {fileID: 1604462708740032, guid: f58146a5384f76e4c92ded87834c3c8a, type: 2}
+  - {fileID: 1646043609665536, guid: c7fbff2bb29ddff40abfc70bc39fe513, type: 2}
   - {fileID: 1122490588782850, guid: d1ee01095d0f1924dab9e14b2ba0ec58, type: 2}
   - {fileID: 1011918346833692, guid: 0978811cb0225c449970db9ba58fa847, type: 2}
   - {fileID: 1019490940747378, guid: acd6530f57d60af4fb56d4b4a684217d, type: 2}
@@ -91,20 +91,20 @@ MonoBehaviour:
   clouds: {fileID: 0}
   spawnPatternArray:
   - {x: 0, y: 35.7, z: 0}
-  - {x: 0, y: 50, z: 0}
-  - {x: 0, y: 76, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
-  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 32.7, z: 0}
+  - {x: 0, y: 81, z: 0}
+  - {x: 0, y: 37.1, z: 0}
+  - {x: 0, y: 89, z: 0}
+  - {x: 0, y: 63, z: 0}
+  - {x: 0, y: 85, z: 0}
+  - {x: 0, y: 77, z: 0}
+  - {x: 0, y: 45, z: 0}
+  - {x: 0, y: 81, z: 0}
+  - {x: 0, y: 63, z: 0}
+  - {x: 0, y: 90, z: 0}
+  - {x: 0, y: 116, z: 0}
+  - {x: 0, y: 143, z: 0}
+  - {x: 0, y: 125, z: 0}
   BUBBLES_NUMBER_MAX: 5
   bubblesArray:
   - {fileID: 0}
