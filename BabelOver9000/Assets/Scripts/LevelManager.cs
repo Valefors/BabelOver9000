@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour {
 
@@ -22,8 +24,10 @@ public class LevelManager : MonoBehaviour {
     private Animator cloudsAnimator;
     [SerializeField] Vector3[] spawnPatternArray;
 
+    public GameObject optionsScreen;
 
-	[Header("BUBBLES")]
+
+    [Header("BUBBLES")]
 	public int BUBBLES_NUMBER_MAX = 5;
 	int currentBubblesActivate = 0;
 
@@ -70,7 +74,8 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		NUMBER_LEVELS = patternsArray.Length;
+        //A REMETTRE
+		//NUMBER_LEVELS = patternsArray.Length;
 
 		chantierSprite = Resources.Load<Sprite>("Sprites/Tour/Chantier");
 
@@ -83,47 +88,19 @@ public class LevelManager : MonoBehaviour {
 		newFloor.GetComponent<SpriteRenderer>().sprite = chantierSprite;
 	}
 
-	/*public void IncrementBubbleActivateNumber(){
-		currentBubblesActivate ++;
-
-		if(currentBubblesActivate == BUBBLES_NUMBER_MAX)
-		{
-			NextLevel();
-		}
-	}*/
-
-	/*public void CheckReplay() {
-		print("zero second");
-		if(shouldReplay == true) 
-		{
-			StartCoroutine(CheckReplayWaitForSeconds());
-		}
-
-		//else NextLevel();
-	}*/
-
-	/*IEnumerator CheckReplayWaitForSeconds()
-	{
-		yield return new WaitForSeconds(1.0f);
-
-		SpawnPattern();
-		MoveBubbles();
-		currentBubblesActivate = 0;
-	}*/
-
 	void NextLevel(){
 
-		level++;
+		//level++;
 
-		if(level == LEVELS_MAYA) print("Maya");
+		/*if(level == LEVELS_MAYA) print("Maya");
 		if(level == LEVELS_RENAISSANCE) print("Renaissance");
-		if(level == LEVELS_KOREA) print("Korea");
+		if(level == LEVELS_KOREA) print("Korea");*/
 
-		if(level >= NUMBER_LEVELS) {
+		/*f(level >= NUMBER_LEVELS) {
 			UpdateFloorSprite(level-1);
 			EndLevel();
 			return;
-		}
+		}*/
 
 		HideBubbles();
         clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
@@ -170,6 +147,12 @@ public class LevelManager : MonoBehaviour {
 			MoveBubbles();
 			AddFloor();
          }
+
+         else
+        {
+            print("can u reload plz");
+            StartCoroutine(ReloadScene());
+        }
  	}
 
  	void Terminate(object in_cookie, AkCallbackType in_type, object in_info)
@@ -183,6 +166,19 @@ public class LevelManager : MonoBehaviour {
 
         if (in_type == AkCallbackType.AK_MusicSyncEntry)
         {
+            level++;
+
+            /*if(level == LEVELS_MAYA) print("Maya");
+            if(level == LEVELS_RENAISSANCE) print("Renaissance");
+            if(level == LEVELS_KOREA) print("Korea");*/
+
+            if (level == NUMBER_LEVELS)
+            {
+                //print()
+                UpdateFloorSprite(level - 1);
+                EndLevel();
+                return;
+            }
             NextLevel();
             /*if (!shouldReplay){
         		//print("next level");
@@ -240,7 +236,7 @@ public class LevelManager : MonoBehaviour {
 		AkSoundEngine.PostEvent(statesArray[0], gameObject);
 		AkSoundEngine.PostEvent("Play_Music", gameObject, (uint)AkCallbackType.AK_MusicSyncEntry, Terminate, null);
 		//AkSoundEngine.SetState("Stage", statesArray[level + 1]);
-		print(statesArray[level]);
+		//print(statesArray[level]);
 
 		//AkSoundEngine.PostEvent(dialog.WwiseEvent, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
 		float posX = spawnPatternArray[0].x;
@@ -252,7 +248,7 @@ public class LevelManager : MonoBehaviour {
 
 	void SpawnPattern()
 	{
-        print(statesArray[level]);
+        //print(statesArray[level]);
 		if(level+1 < NUMBER_LEVELS) AkSoundEngine.PostEvent(statesArray[level+1], gameObject); //ATTENTION LENGTH
 
         float posX = spawnPatternArray[level].x;
@@ -267,14 +263,46 @@ public class LevelManager : MonoBehaviour {
 	void EndLevel(){
 		print("END GAME");
 		Vector3 camPos = cam.gameObject.transform.position;
-        AkSoundEngine.PostEvent("Play_End", gameObject);
+        //AkSoundEngine.PostEvent("Play_End", gameObject);
+        AkSoundEngine.PostEvent("Play_End", gameObject, (uint)AkCallbackType.AK_MusicSyncEntry, Terminate, null);
 
         HideBubbles();
-		StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, firstFinalCamPos, 5));
+		//StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, firstFinalCamPos, 5));
 
-        camPos = cam.gameObject.transform.position;
+        //camPos = cam.gameObject.transform.position;
         StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, firstFinalCamPos, secondFinalCamPos, 10));
+        
     }
 
+    IEnumerator ReloadScene()
+    {
+        yield return new WaitForSeconds(1f);
+
+        //Color color = optionsScreen.GetComponent<Image>().color;
+        //color.a = 0f;
+
+        //optionsScreen.GetComponent<Image>().color = color;
+        optionsScreen.gameObject.SetActive(true);
+
+        for (float i = 0; i <= 2; i += Time.deltaTime)
+        {
+            // set color with i as alpha
+            optionsScreen.GetComponent<Image>().color = new Color(1, 1, 1, i);
+            yield return null;
+        }
+        //optionsScreen.gameObject.GetComponent<Animator>().SetTrigger("fade");
+
+        yield return new WaitForSeconds(5f);
+
+        for (float i = 2; i >= 0; i -= Time.deltaTime)
+        {
+            // set color with i as alpha
+            optionsScreen.GetComponent<Image>().color = new Color(1, 1, 1, i);
+            yield return null;
+        }
+
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
+    }
 
 }

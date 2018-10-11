@@ -60,7 +60,8 @@ public class StartOptions : MonoBehaviour {
 		{
 			//Call the StartGameInScene function to start game without loading a new scene.
 			StartGameInScene();
-		}
+            //animColorFade.SetTrigger("fade");
+        }
 
 	}
 
