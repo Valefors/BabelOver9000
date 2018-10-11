@@ -24,12 +24,15 @@ public class Bubble : MonoBehaviour {
 
     [SerializeField] Sprite bubbleActivate;
     [SerializeField] Sprite bubbleUnactivate;
+    [SerializeField] Score scoreScript;
+    [SerializeField] Animator animator;
 
 	void Awake(){
 		sr = GetComponent<SpriteRenderer>();
         //bubbleActivate = Resources.Load<Sprite>("Sprites/Bubble_Activate");
         //bubbleUnactivate = Resources.Load<Sprite>("Sprites/Bubble");
         player = ReInput.players.GetPlayer(0);
+        animator = GetComponentInChildren<Animator>();
     }
 
 	// Use this for initialization
@@ -57,7 +60,13 @@ public class Bubble : MonoBehaviour {
 				AkSoundEngine.PostEvent(hitSoundName, gameObject);
 				if (note.GetComponent<Note>().isSpecial) {
 					SetModeActive();
-				}
+                    scoreScript.Add(50);
+                    animator.SetTrigger("Play");
+                }
+                else
+                {
+                    scoreScript.Add(10);
+                }
 
 				Destroy(note);
 			}
