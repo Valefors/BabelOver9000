@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\Unity\BabelOver9000\BabelOver9000\Babel_9000\</ProjectRoot>
+		<SourceFilesRoot>D:\Unity\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Unity\BabelOver9000\BabelOver9000\Babel_9000\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\Unity\BabelOver9000\BabelOver9000\Babel_9000\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -22,6 +22,7 @@
 			<Path>Main_SoundBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3596890376" Name="End_Construction" ObjectPath="\Events\Default Work Unit\Construction\End_Construction"/>
+				<Event Id="2959533290" Name="Play_Amb" ObjectPath="\Events\Default Work Unit\Amb\Play_Amb"/>
 				<Event Id="3381697361" Name="Play_Bubble1" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble1"/>
 				<Event Id="3381697362" Name="Play_Bubble2" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble2"/>
 				<Event Id="3381697363" Name="Play_Bubble3" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble3"/>
@@ -46,7 +47,6 @@
 				<Event Id="540733245" Name="Play_Maya_Stage2" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage2"/>
 				<Event Id="540733244" Name="Play_Maya_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage3"/>
 				<Event Id="540733243" Name="Play_Maya_Stage4" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage4"/>
-				<Event Id="2515027838" Name="Play_Menu_Amb" ObjectPath="\Events\Default Work Unit\Play_Menu_Amb"/>
 				<Event Id="176614854" Name="Play_Meso_Stage1" ObjectPath="\Events\Default Work Unit\Music\Play_Meso_Stage1"/>
 				<Event Id="176614853" Name="Play_Meso_Stage2" ObjectPath="\Events\Default Work Unit\Music\Play_Meso_Stage2"/>
 				<Event Id="176614852" Name="Play_Meso_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Meso_Stage3"/>
@@ -56,8 +56,8 @@
 				<Event Id="1937964710" Name="Play_Renaissance_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage3"/>
 				<Event Id="1937964705" Name="Play_Renaissance_Stage4" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage4"/>
 				<Event Id="1042987450" Name="Play_Select" ObjectPath="\Events\Default Work Unit\UI\Play_Select"/>
+				<Event Id="435770000" Name="Stop_Amb" ObjectPath="\Events\Default Work Unit\Amb\Stop_Amb"/>
 				<Event Id="873807182" Name="Stop_Credits" ObjectPath="\Events\Default Work Unit\Music\Stop_Credits"/>
-				<Event Id="3073912520" Name="Stop_Menu_Amb" ObjectPath="\Events\Default Work Unit\Stop_Menu_Amb"/>
 				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Music\Stop_Music"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>

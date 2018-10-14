@@ -42,12 +42,16 @@
 							<Position X="2" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Play_Menu_Amb" ID="{942AB9BC-9AA6-4F65-85B0-0B734131EB32}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<ObjectRef Name="Play_Amb" ID="{2DE7C59C-219F-4539-B772-5127FC8F1D40}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Renaissance_Stage1" ID="{4F01308A-FF44-4FAC-888D-744EE3219080}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
 							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Amb" ID="{2DE7C59C-219F-4539-B772-5127FC8F1D40}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="2" Y="4"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_Music" ID="{423F74A9-6FFB-4063-94C2-6CEB422E5E75}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
@@ -58,7 +62,7 @@
 							<Position X="3" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Stop_Menu_Amb" ID="{DF687D6D-9C6F-42D3-94D2-B0F32A07F201}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<ObjectRef Name="Stop_Amb" ID="{814D0A15-BF7D-4E19-A26C-DDD3AEC1E8CC}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
 							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
@@ -77,7 +81,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Mesopotamian_Stage3" ID="{DAD64C2D-B719-4D72-B8EA-5B8FB3715B02}"/>
+						<CurrentStateRef Name="Mesopotamian_Stage1" ID="{535238FB-193F-45BB-BF5E-C3499F51F873}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

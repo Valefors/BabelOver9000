@@ -18,6 +18,7 @@ State	ID	Name	State Group			Notes
 	3202548000	Mesopotamian_Stage1	Stage			
 	3202548002	Mesopotamian_Stage3	Stage			
 	3202548003	Mesopotamian_Stage2	Stage			
+	3717848113	End_Game	Stage			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

@@ -1,0 +1,92 @@
+Event	ID	Name			Wwise Object Path	Notes
+	176614852	Play_Meso_Stage3			\Default Work Unit\Music\Play_Meso_Stage3	
+	176614853	Play_Meso_Stage2			\Default Work Unit\Music\Play_Meso_Stage2	
+	176614854	Play_Meso_Stage1			\Default Work Unit\Music\Play_Meso_Stage1	
+	224658257	Play_Korea_Stage4			\Default Work Unit\Music\Play_Korea_Stage4	
+	224658260	Play_Korea_Stage1			\Default Work Unit\Music\Play_Korea_Stage1	
+	224658262	Play_Korea_Stage3			\Default Work Unit\Music\Play_Korea_Stage3	
+	224658263	Play_Korea_Stage2			\Default Work Unit\Music\Play_Korea_Stage2	
+	311910498	Play_Click			\Default Work Unit\UI\Play_Click	
+	540733243	Play_Maya_Stage4			\Default Work Unit\Music\Play_Maya_Stage4	
+	540733244	Play_Maya_Stage3			\Default Work Unit\Music\Play_Maya_Stage3	
+	540733245	Play_Maya_Stage2			\Default Work Unit\Music\Play_Maya_Stage2	
+	540733246	Play_Maya_Stage1			\Default Work Unit\Music\Play_Maya_Stage1	
+	873807182	Stop_Credits			\Default Work Unit\Music\Stop_Credits	
+	1042987450	Play_Select			\Default Work Unit\UI\Play_Select	
+	1598463209	Play_Construction			\Default Work Unit\Construction\Play_Construction	
+	1680374718	Play_Destruction			\Default Work Unit\Construction\Play_Destruction	
+	1937964705	Play_Renaissance_Stage4			\Default Work Unit\Music\Play_Renaissance_Stage4	
+	1937964708	Play_Renaissance_Stage1			\Default Work Unit\Music\Play_Renaissance_Stage1	
+	1937964710	Play_Renaissance_Stage3			\Default Work Unit\Music\Play_Renaissance_Stage3	
+	1937964711	Play_Renaissance_Stage2			\Default Work Unit\Music\Play_Renaissance_Stage2	
+	2472290785	Play_End			\Default Work Unit\Music\Play_End	
+	2515027838	Play_Menu_Amb			\Default Work Unit\Play_Menu_Amb	
+	2837384057	Stop_Music			\Default Work Unit\Music\Stop_Music	
+	2855285458	Play_Hit5			\Default Work Unit\Feedbacks\Play_Hit5	
+	2855285459	Play_Hit4			\Default Work Unit\Feedbacks\Play_Hit4	
+	2855285460	Play_Hit3			\Default Work Unit\Feedbacks\Play_Hit3	
+	2855285461	Play_Hit2			\Default Work Unit\Feedbacks\Play_Hit2	
+	2855285462	Play_Hit1			\Default Work Unit\Feedbacks\Play_Hit1	
+	2878934361	Play_Input_Miss			\Default Work Unit\Feedbacks\Play_Input_Miss	
+	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
+	2970769112	Play_Credits			\Default Work Unit\Music\Play_Credits	
+	3073912520	Stop_Menu_Amb			\Default Work Unit\Stop_Menu_Amb	
+	3381697361	Play_Bubble1			\Default Work Unit\Feedbacks\Play_Bubble1	
+	3381697362	Play_Bubble2			\Default Work Unit\Feedbacks\Play_Bubble2	
+	3381697363	Play_Bubble3			\Default Work Unit\Feedbacks\Play_Bubble3	
+	3381697364	Play_Bubble4			\Default Work Unit\Feedbacks\Play_Bubble4	
+	3381697365	Play_Bubble5			\Default Work Unit\Feedbacks\Play_Bubble5	
+	3596890376	End_Construction			\Default Work Unit\Construction\End_Construction	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	60445802	SFX_Construction_Metals_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Metals_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Metals_1		84548
+	135845817	Musique_2_Mayan_Stage2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_2_Mayan_Stage2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mayan_Stage2\Musique_2_Mayan_Stage2\Musique_2_Mayan_Stage2		3456064
+	149281265	Musique_2_Mayan_Stage3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_2_Mayan_Stage3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mayan_Stage3\Musique_2_Mayan_Stage3\Musique_2_Mayan_Stage3		3456064
+	159986390	SFX_Hit_Ok_5	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Hit_Ok_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Hit\SFX_Hit_Ok_5		72064
+	163884889	Musique_4_Korea_Stage2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_4_Korea_Stage2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Korea_Stage2\Musique_4_Korea_Stage2\Musique_4_Korea_Stage2		3456064
+	164349298	SFX_Ui_Select_02	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Ui_Select_02_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_UI\SFX_UI_Select\SFX_Ui_Select_02		96064
+	171278770	SFX_Construction_Metals_2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Metals_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Metals_2		65044
+	186285060	SFX_Construction_Metals_4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Metals_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Metals_4		83008
+	226197944	Musique_1_Masopotamia_Stage1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_1_Masopotamia_Stage1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mesopotamia_Stage1\Musique_1_Masopotamia_Stage1\Musique_1_Masopotamia_Stage1		3840064
+	235330069	SFX_Construction_Woods_4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woods_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woods_4		184384
+	244398884	SFX_Input_Fail	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Input_Fail_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Hit\SFX_Input_Fail		72064
+	263365047	SFX_Bubble_Completed_4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Bubble_Completed_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Bubble\SFX_Bubble_Completed_4		216064
+	274227428	SFX_Bubble_Completed_2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Bubble_Completed_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Bubble\SFX_Bubble_Completed_2		216064
+	277353259	SFX_Ui_Select_01	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Ui_Select_01_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_UI\SFX_UI_Select\SFX_Ui_Select_01		96064
+	351219345	SFX_Construction_Woods_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woods_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woods_3		215104
+	374706674	Musique_Fin_BothV2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_Fin_BothV2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\End_Game\Musique_Fin_BothV2\Musique_Fin_BothV2		4224064
+	411808110	SFX_Construction_Woods_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woods_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woods_1		161344
+	437016939	SFX_Construction_Woosh_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woosh_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woosh_3		161344
+	440305485	Musique_Fin_Piano	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_Fin_Piano_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Credits\Musique_Fin_Piano\Musique_Fin_Piano		4224064
+	447995872	SFX_Menu_Amb	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Menu_Amb_8956FC97.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Menu_Amb		16128064
+	452465904	SFX_Stage_Constructed	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Stage_Constructed_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Ending_Stage\SFX_Stage_Constructed		153664
+	539255988	Musique_2_Mayan_Stage4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_2_Mayan_Stage4_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mayan_Stage4\Musique_2_Mayan_Stage4\Musique_2_Mayan_Stage4		3456064
+	540333522	SFX_Construction_Woosh_2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woosh_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woosh_2		145988
+	576822142	SFX_Construction_Amb_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Amb_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Ambiance_Construction\SFX_Construction_Amb_3		967744
+	584403120	SFX_Bubble_Completed_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Bubble_Completed_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Bubble\SFX_Bubble_Completed_3		216064
+	585617845	SFX_Hit_Ok_2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Hit_Ok_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Hit\SFX_Hit_Ok_2		72064
+	607436639	SFX_Construction_Amb_2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Amb_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Ambiance_Construction\SFX_Construction_Amb_2		960064
+	620016173	Musique_4_Korea_Stage1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_4_Korea_Stage1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Korea_Stage1\Musique_4_Korea_Stage1\Musique_4_Korea_Stage1		3456064
+	620019432	Musique_3_Renaissance_Stage4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_3_Renaissance_Stage4_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Renaissance_Stage4\Musique_3_Renaissance_Stage4\Musique_3_Renaissance_Stage4		2688064
+	660880648	SFX_Ui_Select_03	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Ui_Select_03_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_UI\SFX_UI_Select\SFX_Ui_Select_03		96064
+	701374940	Musique_2_Mayan_Stage1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_2_Mayan_Stage1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mayan_Stage1\Musique_2_Mayan_Stage1\Musique_2_Mayan_Stage1		3456064
+	702881787	SFX_Bubble_Completed_5	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Bubble_Completed_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Bubble\SFX_Bubble_Completed_5		216064
+	709085411	SFX_Bubble_Completed_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Bubble_Completed_1_5A778C82.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Bubble\SFX_Bubble_Completed_1		73488
+	741276038	SFX_Destruction	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Destruction_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\SFX_Destruction		487184
+	770256230	Musique_4_Korea_Stage4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_4_Korea_Stage4_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Korea_Stage4\Musique_4_Korea_Stage4\Musique_4_Korea_Stage4		3840064
+	788764556	SFX_Hit_Ok_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Hit_Ok_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Hit\SFX_Hit_Ok_3		72064
+	815808825	SFX_Construction_Woods_5	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woods_5_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woods_5		59316
+	831794375	Musique_3_Renaissance_Stage1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_3_Renaissance_Stage1_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Renaissance_Stage1\Musique_3_Renaissance_Stage1\Musique_3_Renaissance_Stage1		2688064
+	840203423	Musique_1_Masopotamia_Stage3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_1_Masopotamia_Stage3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mesopotamia_Stage3\Musique_1_Masopotamia_Stage3\Musique_1_Masopotamia_Stage3		3840064
+	849024001	SFX_Hit_Ok_4	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Hit_Ok_4_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Hit\SFX_Hit_Ok_4		72064
+	850840750	SFX_Construction_Amb_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Amb_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Ambiance_Construction\SFX_Construction_Amb_1		967744
+	938596351	SFX_Construction_Woosh_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woosh_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woosh_1		122944
+	965081783	SFX_Construction_Woods_2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Woods_2_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Woods_2		284864
+	973864409	SFX_Ui_Click	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Ui_Click_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_UI\SFX_Ui_Click		288064
+	981489748	Musique_3_Renaissance_Stage2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_3_Renaissance_Stage2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Renaissance_Stage2\Musique_3_Renaissance_Stage2\Musique_3_Renaissance_Stage2		2688064
+	1017254548	Musique_1_Masopotamia_Stage2	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_1_Masopotamia_Stage2_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Mesopotamia_Stage2\Musique_1_Masopotamia_Stage2\Musique_1_Masopotamia_Stage2		3840064
+	1024277668	Musique_4_Korea_Stage3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_4_Korea_Stage3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Korea_Stage3\Musique_4_Korea_Stage3\Musique_4_Korea_Stage3		3456064
+	1040248156	SFX_Construction_Metals_3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Construction_Metals_3_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Construction\Finished_Stage\Building_Stage\Single_Construction\SFX_Construction_Metals_3		194440
+	1048742673	Musique_3_Renaissance_Stage3	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\Musique_3_Renaissance_Stage3_8956FC97.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Renaissance_Stage3\Musique_3_Renaissance_Stage3\Musique_3_Renaissance_Stage3		2688064
+	1068503457	SFX_Hit_Ok_1	C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\SFX\SFX_Hit_Ok_1_56D34C19.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX_Hit\SFX_Hit_Ok_1		72064
+

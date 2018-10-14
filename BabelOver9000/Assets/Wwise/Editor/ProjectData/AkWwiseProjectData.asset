@@ -15,19 +15,19 @@ MonoBehaviour:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 8f10dd3e7ef3f8479ce1b84953d3dcbd
-    m_lastTime: -8586627737154775808
+    m_lastTime: -8586624250587842345
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: ab9c81a650cc504399d33235559b07d4
-    m_lastTime: -8586626806574775808
+    m_lastTime: -8586622363813560913
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 6c7459845bf139428505947cf26c9093
-    m_lastTime: -8586626840254775808
+    m_lastTime: -8586622360887873441
     List:
     - name: Main_SoundBank
       guid: 65cb069c4fa8914eb61ffaeb365f956f
@@ -42,7 +42,7 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: d03ae198ad5a0248b8eaffa31a164703
-    m_lastTime: -8586625990789730611
+    m_lastTime: -8586622352241251394
     List:
     - name: End_Construction
       guid: 95a36b1da390cc46aafbe25b0659c149
@@ -55,6 +55,20 @@ MonoBehaviour:
       - ElementName: End_Construction
         ObjectType: 3
       Path: Default Work Unit\Construction\End_Construction
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Amb
+      guid: 9cc5e72d9f213945b7725127fc8f1d40
+      id: 2959533290
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Play_Amb
+        ObjectType: 3
+      Path: Default Work Unit\Amb\Play_Amb
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -184,17 +198,17 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_End_Game
-      guid: f0d9a26232309240af1ec36c37539a4c
-      id: 247285626
+    - name: Play_End
+      guid: b2baff089274104c9f5fd96d326b131d
+      id: 2472290785
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Music
         ObjectType: 4
-      - ElementName: Play_End_Game
+      - ElementName: Play_End
         ObjectType: 3
-      Path: Default Work Unit\Music\Play_End_Game
+      Path: Default Work Unit\Music\Play_End
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -394,18 +408,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Play_Menu_Amb
-      guid: bcb92a94a69a654f85b00b734131eb32
-      id: 2515027838
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Play_Menu_Amb
-        ObjectType: 3
-      Path: Default Work Unit\Play_Menu_Amb
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
     - name: Play_Meso_Stage1
       guid: 37529500c77912419ad10a09a88af7ca
       id: 176614854
@@ -532,6 +534,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_Amb
+      guid: 150a4d817dbf194ea26cddd3aec1e8cc
+      id: 435770000
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Amb
+        ObjectType: 4
+      - ElementName: Stop_Amb
+        ObjectType: 3
+      Path: Default Work Unit\Amb\Stop_Amb
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Stop_Credits
       guid: 032b8c0992bbd54ebd8153f9a7988629
       id: 873807182
@@ -543,18 +559,6 @@ MonoBehaviour:
       - ElementName: Stop_Credits
         ObjectType: 3
       Path: Default Work Unit\Music\Stop_Credits
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Stop_Menu_Amb
-      guid: 6d7d68df6f9cd34294d2b0f32a07f201
-      id: 3073912520
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Stop_Menu_Amb
-        ObjectType: 3
-      Path: Default Work Unit\Stop_Menu_Amb
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -576,12 +580,12 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 61d0720be78e0a4f8c0fb51ee944ca4a
-    m_lastTime: -8586627737154775808
+    m_lastTime: -8586624250591093760
     List: []
   - PhysicalPath: Game Parameters\Factory Motion.wwu
     ParentPhysicalPath: 
     guid: 225213d7dbd1d042adc0930743567776
-    m_lastTime: -8586627741654775808
+    m_lastTime: -8586624250591093760
     List:
     - name: Playback_Rate
       guid: e37e38283ac11643b9c3db5c521624af
@@ -605,7 +609,7 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 0a59d1c2764fdc48855ed5afa01900fa
-    m_lastTime: -8586625991202571082
+    m_lastTime: -8586624250587852315
     List:
     - name: Stage
       guid: f0ee5b73f2e84d48a2a4063c748d1c85
@@ -723,17 +727,19 @@ MonoBehaviour:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: fecb848b2a688e409b70fc96a8e85604
-    m_lastTime: -8586627031314775808
+    m_lastTime: -8586624250587872266
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     guid: 3966ec568a5ef448a560e3474e23e91a
-    m_lastTime: -8586627737154775808
+    m_lastTime: -8586624250587862289
     List: []
   ExpandedItems:
   - /Babel_9000
   - /Babel_9000/Events
   - /Babel_9000/Events/Default Work Unit
+  - /Babel_9000/Events/Default Work Unit/Amb
+  - /Babel_9000/Events/Default Work Unit/Construction
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

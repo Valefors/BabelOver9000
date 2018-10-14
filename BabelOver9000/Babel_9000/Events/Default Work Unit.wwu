@@ -3,36 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Menu_Amb" ID="{942AB9BC-9AA6-4F65-85B0-0B734131EB32}">
-					<ChildrenList>
-						<Action Name="" ID="{C0FD0066-CA1D-4606-879D-7024360098D4}" ShortID="772480804">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="1"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_Menu_Amb" ID="{FD79469D-9FEE-4CDA-8166-84EBCA3034DA}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Stop_Menu_Amb" ID="{DF687D6D-9C6F-42D3-94D2-B0F32A07F201}">
-					<ChildrenList>
-						<Action Name="" ID="{D1BDF590-AC31-4B82-A2E3-B010F928A03A}" ShortID="147643182">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="SFX_Menu_Amb" ID="{FD79469D-9FEE-4CDA-8166-84EBCA3034DA}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Feedbacks" ID="{49319F94-20D7-4844-8673-E8492040E674}" ShortID="855659677">
 					<ChildrenList>
 						<Event Name="Play_Hit1" ID="{71E6AFCB-8ACA-494A-93C3-0ED03D63143C}">
@@ -213,7 +183,6 @@
 								<Action Name="" ID="{BB3B9517-F978-488C-B1BC-E686E338E815}" ShortID="803276085">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="1"/>
-										<Property Name="FadeTime" Type="Real64" Value="1"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -491,6 +460,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{77AB5B28-0B45-4F03-A1E3-2C53EF8EDEA4}" ShortID="8954267">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Menu_Amb" ID="{FD79469D-9FEE-4CDA-8166-84EBCA3034DA}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="Play_Select" ID="{0E937DE0-8F91-43C6-B815-6D2ADE058935}">
@@ -530,6 +509,11 @@
 								<Action Name="" ID="{1904C3AC-73DF-4207-9EDF-9E018E21B454}" ShortID="46002923">
 									<PropertyList>
 										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
@@ -558,6 +542,40 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="SFX_Destruction" ID="{DE4C4771-166A-4254-A852-D604E2D3D7FE}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Amb" ID="{3D245DAD-5101-48CB-9455-30DE451BB301}" ShortID="1016929965">
+					<ChildrenList>
+						<Event Name="Play_Amb" ID="{2DE7C59C-219F-4539-B772-5127FC8F1D40}">
+							<ChildrenList>
+								<Action Name="" ID="{38774C7E-7A02-48E6-8792-DE9B1F9BE7FC}" ShortID="767481890">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Menu_Amb" ID="{FD79469D-9FEE-4CDA-8166-84EBCA3034DA}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Stop_Amb" ID="{814D0A15-BF7D-4E19-A26C-DDD3AEC1E8CC}">
+							<ChildrenList>
+								<Action Name="" ID="{2385036F-02F4-4F74-A492-F8FBF946A4F9}" ShortID="375467174">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SFX_Menu_Amb" ID="{FD79469D-9FEE-4CDA-8166-84EBCA3034DA}" WorkUnitID="{CDE3C51F-3A00-404B-8817-FC92DB348DC2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

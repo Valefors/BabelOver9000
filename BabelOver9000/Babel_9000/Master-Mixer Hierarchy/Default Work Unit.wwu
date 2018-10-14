@@ -14,13 +14,17 @@
 						<Bus Name="SFX" ID="{DDDB1E75-3F19-4CCD-A41D-052C283B81FE}">
 							<ChildrenList>
 								<Bus Name="Input Miss" ID="{8D314D2C-CD9C-48C3-B65C-184CC3688C47}">
+									<PropertyList>
+										<Property Name="MaxDuckVolume" Type="Real64" Value="-6"/>
+										<Property Name="RecoveryTime" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<DuckingList>
 										<DuckItem>
 											<BusRef Name="Music" ID="{D23E74E0-FEF7-4C31-B2F4-1079ABB053D8}"/>
 											<DuckingParam>
-												<Volume>-12</Volume>
+												<Volume>-6</Volume>
 												<FadeInTime>0</FadeInTime>
-												<FadeOutTime>1</FadeOutTime>
+												<FadeOutTime>0.5</FadeOutTime>
 												<FadeCurve>FadeLog3</FadeCurve>
 											</DuckingParam>
 										</DuckItem>

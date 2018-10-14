@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C2D1590A-4F76-48DC-855E-D5AFA01900FA}" SchemaVersion="89">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{C2D1590A-4F76-48DC-855E-D5AFA01900FA}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Stage" ID="{735BEEF0-E8F2-484D-A2A4-063C748D1C85}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{2714EFC4-1483-4BCD-8F04-10C78908C02B}"/>
+						<State Name="Mesopotamian_Stage1" ID="{535238FB-193F-45BB-BF5E-C3499F51F873}"/>
+						<State Name="Mesopotamian_Stage2" ID="{280779F3-CB49-4062-B053-31EE5B97E55D}"/>
+						<State Name="Mesopotamian_Stage3" ID="{DAD64C2D-B719-4D72-B8EA-5B8FB3715B02}"/>
+						<State Name="Maya_Stage1" ID="{C3C7FE8C-DD6F-4A99-92E4-24BD48AEAD01}"/>
+						<State Name="Maya_Stage2" ID="{B9606ABC-8E95-49D0-94D3-5B578F23709C}"/>
+						<State Name="Maya_Stage3" ID="{4AB898E2-28A4-4DFD-B9ED-8999E63A105B}"/>
+						<State Name="Maya_Stage4" ID="{3E9B522C-CD67-4FEA-A06B-D0AE808DF1E6}"/>
+						<State Name="Renaissance_Stage1" ID="{B8FD7A95-E583-420C-88A4-268BB1ED6063}"/>
+						<State Name="Renaissance_Stage2" ID="{E2FF3646-69D5-443A-9DBC-69A515CF51B5}"/>
+						<State Name="Renaissance_Stage3" ID="{117671CD-3F9D-4B15-AED2-7CECFDAA2DBF}"/>
+						<State Name="Renaissance_Stage4" ID="{DCAD3BB0-3B66-4A61-A24B-B6D1D49A36BB}"/>
+						<State Name="Korea_Stage1" ID="{A2BBA3EB-3EB0-4002-A141-685AA617A764}"/>
+						<State Name="Korea_Stage2" ID="{0755A849-3B37-42EF-8C6C-AF48FC7BFC06}"/>
+						<State Name="Korea_Stage3" ID="{A5EFD0F0-0BA3-417B-85A8-7233EFEB10CC}"/>
+						<State Name="Korea_Stage4" ID="{2D3F105B-876A-4663-9A33-641977AEB30D}"/>
+						<State Name="End_Game" ID="{38B3C63F-ACDD-4345-B0C0-DE234BCB5BF6}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

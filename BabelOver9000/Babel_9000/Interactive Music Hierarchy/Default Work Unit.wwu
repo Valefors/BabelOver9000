@@ -2085,6 +2085,32 @@
 								<MusicTransition Name="Transition" ID="{7AE272C7-64C4-420B-9338-1CD3DC9EBCBD}">
 									<TransitionInfo/>
 								</MusicTransition>
+								<MusicTransition Name="Transition" ID="{2975A410-F262-4E9D-AE35-D6C37FC15B78}">
+									<PropertyList>
+										<Property Name="DestinationContextType" Type="int16" Value="2"/>
+										<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+										<Property Name="ExitSourceAt" Type="int16" Value="0"/>
+										<Property Name="SourceContextType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="DestinationContextObject">
+											<ObjectRef Name="End_Game" ID="{314B1A22-A558-4521-AC73-AEFF146671A0}" WorkUnitID="{85251494-71FA-4758-8FBF-901FD46BB671}"/>
+										</Reference>
+										<Reference Name="SourceContextObject">
+											<ObjectRef Name="Korea_Stage4" ID="{90016907-1444-440A-87A9-6FB160140E34}" WorkUnitID="{85251494-71FA-4758-8FBF-901FD46BB671}"/>
+										</Reference>
+									</ReferenceList>
+									<TransitionInfo>
+										<SourceFadeOut>
+											<MusicFade Name="Source Fade-out" ID="{982840C3-B6CF-4F44-8047-5B972577559D}">
+												<PropertyList>
+													<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+													<Property Name="FadeType" Type="int16" Value="1"/>
+												</PropertyList>
+											</MusicFade>
+										</SourceFadeOut>
+									</TransitionInfo>
+								</MusicTransition>
 							</ChildrenList>
 							<TransitionInfo/>
 						</MusicTransition>

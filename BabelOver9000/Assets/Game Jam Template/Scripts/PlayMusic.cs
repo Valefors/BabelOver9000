@@ -20,14 +20,14 @@ public class PlayMusic : MonoBehaviour {
 	{
 		//Get a component reference to the AudioSource attached to the UI game object
 		musicSource = GetComponent<AudioSource> ();
-		//Call the PlayLevelMusic function to start playing music
-	}
+        //Call the PlayLevelMusic function to start playing music
+    }
 
 
 	public void PlayLevelMusic()
 	{
-		//This switch looks at the last loadedLevel number using the scene index in build settings to decide which music clip to play.
-		switch (SceneManager.GetActiveScene().buildIndex)
+        //This switch looks at the last loadedLevel number using the scene index in build settings to decide which music clip to play.
+        switch (SceneManager.GetActiveScene().buildIndex)
 		{
 			//If scene index is 0 (usually title scene) assign the clip titleMusic to musicSource
 			case 0:

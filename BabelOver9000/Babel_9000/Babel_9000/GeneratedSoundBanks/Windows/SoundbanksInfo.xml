@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="132">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Killian\Downloads\ENJAM\BabelOver9000\BabelOver9000\Babel_9000\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="2228651116" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main_SoundBank</ObjectPath>
+			<ShortName>Main_SoundBank</ShortName>
+			<Path>Main_SoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3596890376" Name="End_Construction" ObjectPath="\Events\Default Work Unit\Construction\End_Construction"/>
+				<Event Id="3381697361" Name="Play_Bubble1" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble1"/>
+				<Event Id="3381697362" Name="Play_Bubble2" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble2"/>
+				<Event Id="3381697363" Name="Play_Bubble3" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble3"/>
+				<Event Id="3381697364" Name="Play_Bubble4" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble4"/>
+				<Event Id="3381697365" Name="Play_Bubble5" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Bubble5"/>
+				<Event Id="311910498" Name="Play_Click" ObjectPath="\Events\Default Work Unit\UI\Play_Click"/>
+				<Event Id="1598463209" Name="Play_Construction" ObjectPath="\Events\Default Work Unit\Construction\Play_Construction"/>
+				<Event Id="2970769112" Name="Play_Credits" ObjectPath="\Events\Default Work Unit\Music\Play_Credits"/>
+				<Event Id="1680374718" Name="Play_Destruction" ObjectPath="\Events\Default Work Unit\Construction\Play_Destruction"/>
+				<Event Id="2472290785" Name="Play_End" ObjectPath="\Events\Default Work Unit\Music\Play_End"/>
+				<Event Id="2855285462" Name="Play_Hit1" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit1"/>
+				<Event Id="2855285461" Name="Play_Hit2" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit2"/>
+				<Event Id="2855285460" Name="Play_Hit3" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit3"/>
+				<Event Id="2855285459" Name="Play_Hit4" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit4"/>
+				<Event Id="2855285458" Name="Play_Hit5" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Hit5"/>
+				<Event Id="2878934361" Name="Play_Input_Miss" ObjectPath="\Events\Default Work Unit\Feedbacks\Play_Input_Miss"/>
+				<Event Id="224658260" Name="Play_Korea_Stage1" ObjectPath="\Events\Default Work Unit\Music\Play_Korea_Stage1"/>
+				<Event Id="224658263" Name="Play_Korea_Stage2" ObjectPath="\Events\Default Work Unit\Music\Play_Korea_Stage2"/>
+				<Event Id="224658262" Name="Play_Korea_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Korea_Stage3"/>
+				<Event Id="224658257" Name="Play_Korea_Stage4" ObjectPath="\Events\Default Work Unit\Music\Play_Korea_Stage4"/>
+				<Event Id="540733246" Name="Play_Maya_Stage1" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage1"/>
+				<Event Id="540733245" Name="Play_Maya_Stage2" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage2"/>
+				<Event Id="540733244" Name="Play_Maya_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage3"/>
+				<Event Id="540733243" Name="Play_Maya_Stage4" ObjectPath="\Events\Default Work Unit\Music\Play_Maya_Stage4"/>
+				<Event Id="2515027838" Name="Play_Menu_Amb" ObjectPath="\Events\Default Work Unit\Play_Menu_Amb"/>
+				<Event Id="176614854" Name="Play_Meso_Stage1" ObjectPath="\Events\Default Work Unit\Music\Play_Meso_Stage1"/>
+				<Event Id="176614853" Name="Play_Meso_Stage2" ObjectPath="\Events\Default Work Unit\Music\Play_Meso_Stage2"/>
+				<Event Id="176614852" Name="Play_Meso_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Meso_Stage3"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music"/>
+				<Event Id="1937964708" Name="Play_Renaissance_Stage1" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage1"/>
+				<Event Id="1937964711" Name="Play_Renaissance_Stage2" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage2"/>
+				<Event Id="1937964710" Name="Play_Renaissance_Stage3" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage3"/>
+				<Event Id="1937964705" Name="Play_Renaissance_Stage4" ObjectPath="\Events\Default Work Unit\Music\Play_Renaissance_Stage4"/>
+				<Event Id="1042987450" Name="Play_Select" ObjectPath="\Events\Default Work Unit\UI\Play_Select"/>
+				<Event Id="873807182" Name="Stop_Credits" ObjectPath="\Events\Default Work Unit\Music\Stop_Credits"/>
+				<Event Id="3073912520" Name="Stop_Menu_Amb" ObjectPath="\Events\Default Work Unit\Stop_Menu_Amb"/>
+				<Event Id="2837384057" Name="Stop_Music" ObjectPath="\Events\Default Work Unit\Music\Stop_Music"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="60445802" Language="SFX">
+					<ShortName>SFX_Construction_Metals_1.wav</ShortName>
+					<Path>SFX\SFX_Construction_Metals_1_56D34C19.wem</Path>
+				</File>
+				<File Id="135845817" Language="SFX">
+					<ShortName>Musique_2_Mayan_Stage2.wav</ShortName>
+					<Path>SFX\Musique_2_Mayan_Stage2_8956FC97.wem</Path>
+				</File>
+				<File Id="149281265" Language="SFX">
+					<ShortName>Musique_2_Mayan_Stage3.wav</ShortName>
+					<Path>SFX\Musique_2_Mayan_Stage3_8956FC97.wem</Path>
+				</File>
+				<File Id="159986390" Language="SFX">
+					<ShortName>SFX_Hit_Ok_5.wav</ShortName>
+					<Path>SFX\SFX_Hit_Ok_5_56D34C19.wem</Path>
+				</File>
+				<File Id="163884889" Language="SFX">
+					<ShortName>Musique_4_Korea_Stage2.wav</ShortName>
+					<Path>SFX\Musique_4_Korea_Stage2_8956FC97.wem</Path>
+				</File>
+				<File Id="164349298" Language="SFX">
+					<ShortName>SFX_Ui_Select_02.wav</ShortName>
+					<Path>SFX\SFX_Ui_Select_02_56D34C19.wem</Path>
+				</File>
+				<File Id="171278770" Language="SFX">
+					<ShortName>SFX_Construction_Metals_2.wav</ShortName>
+					<Path>SFX\SFX_Construction_Metals_2_56D34C19.wem</Path>
+				</File>
+				<File Id="186285060" Language="SFX">
+					<ShortName>SFX_Construction_Metals_4.wav</ShortName>
+					<Path>SFX\SFX_Construction_Metals_4_56D34C19.wem</Path>
+				</File>
+				<File Id="226197944" Language="SFX">
+					<ShortName>Musique_1_Masopotamia_Stage1.wav</ShortName>
+					<Path>SFX\Musique_1_Masopotamia_Stage1_8956FC97.wem</Path>
+				</File>
+				<File Id="235330069" Language="SFX">
+					<ShortName>SFX_Construction_Woods_4.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woods_4_56D34C19.wem</Path>
+				</File>
+				<File Id="244398884" Language="SFX">
+					<ShortName>SFX_Input_Fail.wav</ShortName>
+					<Path>SFX\SFX_Input_Fail_56D34C19.wem</Path>
+				</File>
+				<File Id="263365047" Language="SFX">
+					<ShortName>SFX_Bubble_Completed_4.wav</ShortName>
+					<Path>SFX\SFX_Bubble_Completed_4_56D34C19.wem</Path>
+				</File>
+				<File Id="274227428" Language="SFX">
+					<ShortName>SFX_Bubble_Completed_2.wav</ShortName>
+					<Path>SFX\SFX_Bubble_Completed_2_56D34C19.wem</Path>
+				</File>
+				<File Id="277353259" Language="SFX">
+					<ShortName>SFX_Ui_Select_01.wav</ShortName>
+					<Path>SFX\SFX_Ui_Select_01_56D34C19.wem</Path>
+				</File>
+				<File Id="351219345" Language="SFX">
+					<ShortName>SFX_Construction_Woods_3.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woods_3_56D34C19.wem</Path>
+				</File>
+				<File Id="374706674" Language="SFX">
+					<ShortName>Musique_Fin_BothV2.wav</ShortName>
+					<Path>SFX\Musique_Fin_BothV2_8956FC97.wem</Path>
+				</File>
+				<File Id="411808110" Language="SFX">
+					<ShortName>SFX_Construction_Woods_1.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woods_1_56D34C19.wem</Path>
+				</File>
+				<File Id="437016939" Language="SFX">
+					<ShortName>SFX_Construction_Woosh_3.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woosh_3_56D34C19.wem</Path>
+				</File>
+				<File Id="440305485" Language="SFX">
+					<ShortName>Musique_Fin_Piano.wav</ShortName>
+					<Path>SFX\Musique_Fin_Piano_8956FC97.wem</Path>
+				</File>
+				<File Id="447995872" Language="SFX">
+					<ShortName>SFX_Menu_Amb.wav</ShortName>
+					<Path>SFX\SFX_Menu_Amb_8956FC97.wem</Path>
+				</File>
+				<File Id="452465904" Language="SFX">
+					<ShortName>SFX_Stage_Constructed.wav</ShortName>
+					<Path>SFX\SFX_Stage_Constructed_56D34C19.wem</Path>
+				</File>
+				<File Id="539255988" Language="SFX">
+					<ShortName>Musique_2_Mayan_Stage4.wav</ShortName>
+					<Path>SFX\Musique_2_Mayan_Stage4_8956FC97.wem</Path>
+				</File>
+				<File Id="540333522" Language="SFX">
+					<ShortName>SFX_Construction_Woosh_2.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woosh_2_56D34C19.wem</Path>
+				</File>
+				<File Id="576822142" Language="SFX">
+					<ShortName>SFX_Construction_Amb_3.wav</ShortName>
+					<Path>SFX\SFX_Construction_Amb_3_56D34C19.wem</Path>
+				</File>
+				<File Id="584403120" Language="SFX">
+					<ShortName>SFX_Bubble_Completed_3.wav</ShortName>
+					<Path>SFX\SFX_Bubble_Completed_3_56D34C19.wem</Path>
+				</File>
+				<File Id="585617845" Language="SFX">
+					<ShortName>SFX_Hit_Ok_2.wav</ShortName>
+					<Path>SFX\SFX_Hit_Ok_2_56D34C19.wem</Path>
+				</File>
+				<File Id="607436639" Language="SFX">
+					<ShortName>SFX_Construction_Amb_2.wav</ShortName>
+					<Path>SFX\SFX_Construction_Amb_2_56D34C19.wem</Path>
+				</File>
+				<File Id="620016173" Language="SFX">
+					<ShortName>Musique_4_Korea_Stage1.wav</ShortName>
+					<Path>SFX\Musique_4_Korea_Stage1_8956FC97.wem</Path>
+				</File>
+				<File Id="620019432" Language="SFX">
+					<ShortName>Musique_3_Renaissance_Stage4.wav</ShortName>
+					<Path>SFX\Musique_3_Renaissance_Stage4_8956FC97.wem</Path>
+				</File>
+				<File Id="660880648" Language="SFX">
+					<ShortName>SFX_Ui_Select_03.wav</ShortName>
+					<Path>SFX\SFX_Ui_Select_03_56D34C19.wem</Path>
+				</File>
+				<File Id="701374940" Language="SFX">
+					<ShortName>Musique_2_Mayan_Stage1.wav</ShortName>
+					<Path>SFX\Musique_2_Mayan_Stage1_8956FC97.wem</Path>
+				</File>
+				<File Id="702881787" Language="SFX">
+					<ShortName>SFX_Bubble_Completed_5.wav</ShortName>
+					<Path>SFX\SFX_Bubble_Completed_5_56D34C19.wem</Path>
+				</File>
+				<File Id="709085411" Language="SFX">
+					<ShortName>SFX_Bubble_Completed_1.wav</ShortName>
+					<Path>SFX\SFX_Bubble_Completed_1_5A778C82.wem</Path>
+				</File>
+				<File Id="741276038" Language="SFX">
+					<ShortName>SFX_Destruction.wav</ShortName>
+					<Path>SFX\SFX_Destruction_56D34C19.wem</Path>
+				</File>
+				<File Id="770256230" Language="SFX">
+					<ShortName>Musique_4_Korea_Stage4.wav</ShortName>
+					<Path>SFX\Musique_4_Korea_Stage4_8956FC97.wem</Path>
+				</File>
+				<File Id="788764556" Language="SFX">
+					<ShortName>SFX_Hit_Ok_3.wav</ShortName>
+					<Path>SFX\SFX_Hit_Ok_3_56D34C19.wem</Path>
+				</File>
+				<File Id="815808825" Language="SFX">
+					<ShortName>SFX_Construction_Woods_5.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woods_5_56D34C19.wem</Path>
+				</File>
+				<File Id="831794375" Language="SFX">
+					<ShortName>Musique_3_Renaissance_Stage1.wav</ShortName>
+					<Path>SFX\Musique_3_Renaissance_Stage1_8956FC97.wem</Path>
+				</File>
+				<File Id="840203423" Language="SFX">
+					<ShortName>Musique_1_Masopotamia_Stage3.wav</ShortName>
+					<Path>SFX\Musique_1_Masopotamia_Stage3_8956FC97.wem</Path>
+				</File>
+				<File Id="849024001" Language="SFX">
+					<ShortName>SFX_Hit_Ok_4.wav</ShortName>
+					<Path>SFX\SFX_Hit_Ok_4_56D34C19.wem</Path>
+				</File>
+				<File Id="850840750" Language="SFX">
+					<ShortName>SFX_Construction_Amb_1.wav</ShortName>
+					<Path>SFX\SFX_Construction_Amb_1_56D34C19.wem</Path>
+				</File>
+				<File Id="938596351" Language="SFX">
+					<ShortName>SFX_Construction_Woosh_1.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woosh_1_56D34C19.wem</Path>
+				</File>
+				<File Id="965081783" Language="SFX">
+					<ShortName>SFX_Construction_Woods_2.wav</ShortName>
+					<Path>SFX\SFX_Construction_Woods_2_56D34C19.wem</Path>
+				</File>
+				<File Id="973864409" Language="SFX">
+					<ShortName>SFX_Ui_Click.wav</ShortName>
+					<Path>SFX\SFX_Ui_Click_56D34C19.wem</Path>
+				</File>
+				<File Id="981489748" Language="SFX">
+					<ShortName>Musique_3_Renaissance_Stage2.wav</ShortName>
+					<Path>SFX\Musique_3_Renaissance_Stage2_8956FC97.wem</Path>
+				</File>
+				<File Id="1017254548" Language="SFX">
+					<ShortName>Musique_1_Masopotamia_Stage2.wav</ShortName>
+					<Path>SFX\Musique_1_Masopotamia_Stage2_8956FC97.wem</Path>
+				</File>
+				<File Id="1024277668" Language="SFX">
+					<ShortName>Musique_4_Korea_Stage3.wav</ShortName>
+					<Path>SFX\Musique_4_Korea_Stage3_8956FC97.wem</Path>
+				</File>
+				<File Id="1040248156" Language="SFX">
+					<ShortName>SFX_Construction_Metals_3.wav</ShortName>
+					<Path>SFX\SFX_Construction_Metals_3_56D34C19.wem</Path>
+				</File>
+				<File Id="1048742673" Language="SFX">
+					<ShortName>Musique_3_Renaissance_Stage3.wav</ShortName>
+					<Path>SFX\Musique_3_Renaissance_Stage3_8956FC97.wem</Path>
+				</File>
+				<File Id="1068503457" Language="SFX">
+					<ShortName>SFX_Hit_Ok_1.wav</ShortName>
+					<Path>SFX\SFX_Hit_Ok_1_56D34C19.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

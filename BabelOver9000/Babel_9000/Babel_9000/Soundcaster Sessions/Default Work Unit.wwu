@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7F1E864E-ED6D-42DA-BA1F-3A0E29D7918B}" SchemaVersion="89">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{7F1E864E-ED6D-42DA-BA1F-3A0E29D7918B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Game Sim" ID="{1E005321-AA7D-4577-ABFF-033B3BF65CC4}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Bubble1" ID="{F30E82B0-1C82-4093-8BF2-B7CACB162921}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Construction" ID="{C28EC470-971A-4834-B0BE-9E06D733CC8A}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Click" ID="{EE434517-92EA-4707-973F-113D9193D373}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Hit1" ID="{71E6AFCB-8ACA-494A-93C3-0ED03D63143C}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="End_Construction" ID="{1D6BA395-90A3-46CC-AAFB-E25B0659C149}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Select" ID="{0E937DE0-8F91-43C6-B815-6D2ADE058935}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Maya_Stage2" ID="{347A052B-18EB-430E-B8DB-08760745F8B2}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Input_Miss" ID="{2458BBA9-7399-48EE-854B-B41DF38B9F90}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Destruction" ID="{74CB4570-5E8F-4E8A-A50F-AA68A6D4C829}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Menu_Amb" ID="{942AB9BC-9AA6-4F65-85B0-0B734131EB32}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Renaissance_Stage1" ID="{4F01308A-FF44-4FAC-888D-744EE3219080}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{423F74A9-6FFB-4063-94C2-6CEB422E5E75}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Music" ID="{088583DA-18FF-450E-A4A8-B5AA2FC5EBDC}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Menu_Amb" ID="{DF687D6D-9C6F-42D3-94D2-B0F32A07F201}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Korea_Stage1" ID="{BA9D48D6-4115-4F5F-8984-DF44D705F98D}" WorkUnitID="{98E13AD0-5AAD-4802-B8EA-FFA31A164703}"/>
+							<Position X="3" Y="3"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Playback_Rate" ID="{28387EE3-C13A-4316-B9C3-DB5C521624AF}"/>
+							<Value>1</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RPM" ID="{9112AA05-F577-44FD-9F4E-4424158129E6}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Mesopotamian_Stage3" ID="{DAD64C2D-B719-4D72-B8EA-5B8FB3715B02}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>
