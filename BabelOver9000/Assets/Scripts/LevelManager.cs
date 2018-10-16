@@ -25,6 +25,8 @@ public class LevelManager : MonoBehaviour {
     [SerializeField] Vector3[] spawnPatternArray;
 
     public GameObject optionsScreen;
+    public GameObject score;
+    public Button quitButton;
 
 
     [Header("BUBBLES")]
@@ -47,12 +49,14 @@ public class LevelManager : MonoBehaviour {
 	//int spriteIndex = 0;
 
 	Vector3 firstFinalCamPos = new Vector3(0f, 4f, -16f);
-    Vector3 secondFinalCamPos = new Vector3(0f, 55f, -16f);
+    Vector3 secondFinalCamPos = new Vector3(0f, 60f, -16f);
     //Vector3 firstFinalCamPos = new Vector3(0f, 25f, -45f);
 
     int level = 0;
 	public bool shouldReplay = false;
 	bool firstPlay = true;
+
+	GameObject currentPattern;
 
 	//		float newY = GetComponent<Transform>().position.y + 2;
 	//	GetComponent<Transform>().position = new Vector3(0, newY, 0);
@@ -103,6 +107,7 @@ public class LevelManager : MonoBehaviour {
 		}*/
 
 		HideBubbles();
+		Destroy(currentPattern);
         clouds.transform.position = new Vector3(clouds.transform.position.x, floorPosY, -0.29f);
         cloudsAnimator.SetTrigger("CloudAnim");
 	}
@@ -174,8 +179,6 @@ public class LevelManager : MonoBehaviour {
 
             if (level == NUMBER_LEVELS)
             {
-                //print()
-                UpdateFloorSprite(level - 1);
                 EndLevel();
                 return;
             }
@@ -243,7 +246,7 @@ public class LevelManager : MonoBehaviour {
         float posY = spawnPatternArray[0].y;
         float posZ = spawnPatternArray[0].z;
 
-		Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
+		currentPattern = Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
     }
 
 	void SpawnPattern()
@@ -257,32 +260,35 @@ public class LevelManager : MonoBehaviour {
 
         //if (!shouldReplay) posY += FLOOR_OFFSET_Y;
 
-		Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
+		currentPattern = Instantiate(patternsArray[level].gameObject, new Vector3(posX, posY, posZ), Quaternion.identity);
 	}
 
 	void EndLevel(){
 		print("END GAME");
+		UpdateFloorSprite(14);
 		Vector3 camPos = cam.gameObject.transform.position;
         //AkSoundEngine.PostEvent("Play_End", gameObject);
         AkSoundEngine.PostEvent("Play_End", gameObject, (uint)AkCallbackType.AK_MusicSyncEntry, Terminate, null);
 
         HideBubbles();
+        score.gameObject.SetActive(false);
 		//StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, camPos, firstFinalCamPos, 5));
 
         //camPos = cam.gameObject.transform.position;
-        StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, firstFinalCamPos, secondFinalCamPos, 10));
+        StartCoroutine(MoveCameraFromTo(cam.gameObject.transform, firstFinalCamPos, secondFinalCamPos, 3));
         
     }
 
     IEnumerator ReloadScene()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(17f);
 
         //Color color = optionsScreen.GetComponent<Image>().color;
         //color.a = 0f;
 
         //optionsScreen.GetComponent<Image>().color = color;
         optionsScreen.gameObject.SetActive(true);
+        quitButton.gameObject.SetActive(false);
 
         for (float i = 0; i <= 2; i += Time.deltaTime)
         {
@@ -292,14 +298,16 @@ public class LevelManager : MonoBehaviour {
         }
         //optionsScreen.gameObject.GetComponent<Animator>().SetTrigger("fade");
 
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(1.5f);
 
-        for (float i = 2; i >= 0; i -= Time.deltaTime)
+        /*for (float i = 1; i >= 0; i -= Time.deltaTime)
         {
             // set color with i as alpha
             optionsScreen.GetComponent<Image>().color = new Color(1, 1, 1, i);
             yield return null;
-        }
+        }*/
+
+        Application.Quit();
 
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);
